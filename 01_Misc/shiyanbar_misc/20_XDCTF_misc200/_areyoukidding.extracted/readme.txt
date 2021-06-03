@@ -1,0 +1,2 @@
+This ctf event was rganized and is copyright by XDSEC
+Xidian University has established the ideas of "people-oriented" and "teachers being the core competitive ability of a university", and forged a well-structured contingent of teachers with an innovative spirit.

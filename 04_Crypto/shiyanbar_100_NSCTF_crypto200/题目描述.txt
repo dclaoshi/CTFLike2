@@ -1,0 +1,6 @@
+名称
+NSCTF crypto200
+
+描述
+小绿在黑进一台服务器后，在root文件夹下找到了一张图片，据说图片中有root的密码，您能帮他找到吗？
+解题链接： http://ctf5.shiyanbar.com/crypto/newnewnew.jpg

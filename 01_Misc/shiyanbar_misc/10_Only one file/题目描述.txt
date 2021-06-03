@@ -1,0 +1,10 @@
+名称
+Only one file
+
+描述
+懒的人都做得快。
+hint：听说Linux很好用
+
+格式：CTF{ }
+
+解题链接： onlyOneFile

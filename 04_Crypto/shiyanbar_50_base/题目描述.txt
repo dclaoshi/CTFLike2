@@ -1,0 +1,10 @@
+名称
+base??
+
+描述
+YMFZZTY0D3RMD3RMMTIZ
+
+这一串到底是什么！！！！为什么这么像base32却不是！！！
+
+明文的md5值为16478a151bdd41335dcd69b270f6b985
+解题链接： http://ctf5.shiyanbar.com/crypto/c300

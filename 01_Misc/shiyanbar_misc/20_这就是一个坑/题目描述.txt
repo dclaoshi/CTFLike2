@@ -1,0 +1,11 @@
+名称
+这就是一个坑
+
+描述
+密码是十位大小写字母、数字、特殊符号组成的，你爆破的开么？！
+
+
+key格式：flag{xxx}
+
+
+解题链接： http://ctf5.shiyanbar.com/misc/no.zip

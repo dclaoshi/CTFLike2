@@ -1,0 +1,9 @@
+名称
+js
+
+描述
+小明某天在看js的时候，突然看到了这么一段代码，发现怎么也理不出代码逻辑，你能帮帮他吗？
+
+格式：SimCTF{}
+
+解题链接： http://ctf5.shiyanbar.com/crypto/2.html

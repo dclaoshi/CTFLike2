@@ -1,0 +1,17 @@
+名称
+trivial
+
+描述
+An unlocked terminal is displaying the following:
+
+Encryption complete, ENC(???,T0pS3cre7key) = Bot kmws mikferuigmzf rmfrxrwqe abs perudsf! Nvm kda ut ab8bv_w4ue0_ab8v_DDU
+
+You poke around and find this interesting file.
+
+未锁定的终端显示以下内容：
+
+加密完成，ENC（???，T0pS3cre7key）= Bot kmws mikferuigmzf rmfrxrwqe abs perudsf！ Nvm kda ut ab8bv_w4ue0_ab8v_DDU
+
+你四处寻找并找到这个有趣的文件。
+
+附件 encrypt.rar

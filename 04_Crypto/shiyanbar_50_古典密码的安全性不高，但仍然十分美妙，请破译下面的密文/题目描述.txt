@@ -1,0 +1,6 @@
+名称
+古典密码的安全性不高，但仍然十分美妙，请破译下面的密文
+
+描述
+本题 flag 并非 flag{可见字符} 的形式
+解题链接： http://ctf5.shiyanbar.com/qwctf/1.html

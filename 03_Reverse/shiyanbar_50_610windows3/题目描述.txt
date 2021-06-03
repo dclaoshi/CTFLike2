@@ -1,0 +1,7 @@
+名称
+610windows3
+
+描述
+分析此crackme，找到key。
+格式：flag:{xxx}
+解题链接： http://ctf5.shiyanbar.com/reverse/610windows3/crackme.rar

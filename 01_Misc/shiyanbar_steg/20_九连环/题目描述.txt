@@ -1,0 +1,6 @@
+名称
+九连环
+
+描述
+flag格式：flag{xxx}
+解题链接： http://ctf5.shiyanbar.com/stega/huan/123456cry.jpg

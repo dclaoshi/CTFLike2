@@ -1,0 +1,6 @@
+名称
+Black Hole
+
+描述
+Near the galactic core, you find a beacon indicating that an ancient civilization hid one of their worlds within a nearby black hole. Is this what passes for intergalactic humor, or is there actually something in there?
+解题链接： http://ctf5.shiyanbar.com/stega/black-hole/blackhole.img

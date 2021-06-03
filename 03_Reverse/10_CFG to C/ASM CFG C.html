@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)http://ctf5.shiyanbar.com/reverse/cfg-to-c/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <title>ASM CFG C</title>
+        <link rel="stylesheet" href="http://ctf5.shiyanbar.com/reverse/cfg-to-c/index.html">
+    </head>
+
+    <body>Match the control flow graph on the left with the correct C function on the right. Submit the correct answer sequence (i.e. 'ABCD').
+        <form method="post" action="http://ctf5.shiyanbar.com/reverse/cfg-to-c/grader.py">
+            <table cellpadding="15px" align="center">
+                <tbody><tr><th>
+                    </th><td width="10%"></td>
+                    <td width="35%"></td>
+                    <td width="1%"></td>
+                    <td width="50%"></td>                    
+                
+                </tr><tr>
+                    <td><h1>1)</h1></td>
+                    <td align="center">
+                        <img src="./ASM CFG C_files/func1.png">
+                    </td>  
+                    <td></td>                                      
+                    <td><h1>A)</h1>
+                        <pre>        int modulo(int a, int b)
+        {
+            return b % a;
+        }
+
+                        </pre>
+                    </td>
+                </tr>
+		        <tr>
+                    <td><h1>2)</h1></td>
+		            <td align="center">
+                        <img src="./ASM CFG C_files/func2.png">
+		            </td><td></td>
+		            <td><h1>B)</h1>
+			        <pre>        int loop(int a)
+        {
+            while (a &gt;= 0) {
+                a--;
+            }
+            return a;
+        }
+			        </pre>
+		            </td>
+		        </tr>
+		        <tr>
+		            <td><h1>3)</h1></td>
+		            <td align="center">
+                        <img src="./ASM CFG C_files/func3.png">
+		            </td>
+		            <td>
+		            </td>
+		            <td><h1>C)</h1>
+			        <pre>        int control(int a, int b)
+        {    
+            if (a &gt; b)
+                return b;
+            else 
+                return a;  
+            
+        }
+			        </pre>
+		            </td>
+		        </tr>
+		        <tr>
+                    <td><h1>4)</h1></td>
+		            <td align="center">			
+                        <img src="./ASM CFG C_files/func4.png">			
+		            </td>
+		            <td>
+		            </td><td><h1>D)</h1>
+			        <pre>        int for_loop(int a, int b, int c)
+        {
+            int i;
+
+            for(i = 0; i &lt; b; i++)
+                 a = c + i;
+            return a;
+        }
+
+			        </pre>
+		            </td>
+		        </tr>
+
+            </tbody></table>
+        </form>
+    
+
+</body></html>

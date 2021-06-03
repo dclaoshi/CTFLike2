@@ -1,0 +1,11 @@
+名称
+黑与白(二)
+
+描述
+仔细看看文件。向pcat致敬。 
+
+格式：CTF{}
+
+
+
+解题链接： http://ctf5.shiyanbar.com/stega/yhpargonagets.png

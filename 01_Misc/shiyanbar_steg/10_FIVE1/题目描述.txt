@@ -1,0 +1,9 @@
+名称
+FIVE1
+
+描述
+图片内藏有5位数密码，你能找出来吗？
+
+flag格式：flag{xxx}
+
+解题链接： http://ctf5.shiyanbar.com/stega/FIVE1/1111110000000000.jpg

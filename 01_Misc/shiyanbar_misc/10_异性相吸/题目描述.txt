@@ -1,0 +1,7 @@
+名称
+异性相吸
+
+描述
+格式：nctf{ }
+
+解题链接： http://ctf5.shiyanbar.com/misc/yx.zip

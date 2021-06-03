@@ -1,0 +1,8 @@
+名称
+紧急报文
+
+描述
+解密一下这份截获的密文吧，时间就是机会！
+FA XX DD AG FF XG FD XG DD DG GA XF FA
+
+flag格式:flag_Xd{hSh_ctf:******}

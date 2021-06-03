@@ -1,0 +1,6 @@
+名称
+robomunication
+
+描述
+We recorded the following file between two robots. Find out what evil things they are plotting, and recover their secret key!
+解题链接： http://ctf5.shiyanbar.com/crypto/robomunication/robo.rar

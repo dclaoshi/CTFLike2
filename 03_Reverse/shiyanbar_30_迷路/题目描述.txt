@@ -1,0 +1,9 @@
+名称
+迷路
+
+描述
+这是一个简单的程序，请找到其中隐藏的Flag
+
+格式：OOCTF{ }
+
+解题链接： http://ctf5.shiyanbar.com/re/crackme.exe

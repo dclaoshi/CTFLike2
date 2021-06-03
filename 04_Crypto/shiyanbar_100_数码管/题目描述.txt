@@ -1,0 +1,6 @@
+名称
+数码管
+
+描述
+lag已给出，请以十六进制表示
+解题链接： http://ctf5.shiyanbar.com/DUTCTF/1.png

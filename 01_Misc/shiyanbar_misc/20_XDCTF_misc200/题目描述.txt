@@ -1,0 +1,9 @@
+名称
+XDCTF misc200
+
+描述
+明文攻击
+
+格式：XDCTF{ }
+
+解题链接： http://ctf5.shiyanbar.com/misc/areyoukidding

@@ -1,0 +1,6 @@
+名称
+唯密文攻击
+
+描述
+试试看破解这个 1024 位 RSA 系统。flag的形式是 CTF{USTC-X}，X 是 RSA 的两个素数中较小的那个（取其大写MD5的前6位）
+解题链接： http://ctf5.shiyanbar.com/crypto/ciphertext.zip

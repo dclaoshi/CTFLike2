@@ -1,0 +1,9 @@
+名称
+py的交易
+
+描述
+哈，这一切都是py...
+
+格式：CTF{ }
+
+解题链接： http://ctf5.shiyanbar.com/10/beiduofen.zip

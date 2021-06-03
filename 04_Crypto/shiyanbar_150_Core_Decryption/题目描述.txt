@@ -1,0 +1,6 @@
+名称
+Core Decryption
+
+描述
+In a ruined city on a forgotten world, you find a broken cogitator controlling access to the Vault. You have blueprints for the machine, and a stickynote attached to the monitor with the encrypted input. The machine seems to have crashed while decrypting, and generated a core dump, too. Maybe if you can get the encryption keys out of the core dump, you can decrypt the ciphertext and get the vault open...
+解题链接： http://ctf5.shiyanbar.com/crypto/Core Decryption/core_decrypt.tar

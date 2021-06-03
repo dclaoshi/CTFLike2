@@ -1,0 +1,6 @@
+名称
+Byte Code
+
+描述
+You need to authenticate with the guard to gain access to the loading bay! Enter the root password from the vault application to retrieve the passkey! This class file is the executable for the vault application.
+解题链接： http://ctf5.shiyanbar.com/reverse/byte-code/tmp.zip

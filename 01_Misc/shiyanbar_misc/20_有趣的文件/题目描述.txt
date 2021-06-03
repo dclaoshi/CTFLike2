@@ -1,0 +1,9 @@
+名称
+有趣的文件
+
+描述
+这是一个有趣的文件，打开看看你能想到什么
+
+格式：CTF{ }
+
+解题链接： http://ctf5.shiyanbar.com/misc/funfile

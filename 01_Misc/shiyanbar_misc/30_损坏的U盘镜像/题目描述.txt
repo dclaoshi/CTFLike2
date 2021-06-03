@@ -1,0 +1,7 @@
+名称
+损坏的U盘镜像
+
+描述
+No Format！！！
+key值：CTF{xxxx}
+解题链接： http://ctf5.shiyanbar.com/misc/upan/CTF.hdd

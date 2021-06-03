@@ -1,0 +1,7 @@
+名称
+923app2
+
+描述
+本木马病毒查杀工具经过了APK的加固，原DEX文件已经被隐藏。需要还原出未保护的病毒木马查杀工具的完整DEX文件。并提交DEX文件的SHA1值。
+格式：flag:{xxx}
+解题链接： http://ctf5.shiyanbar.com/reverse/923app2/2.rar

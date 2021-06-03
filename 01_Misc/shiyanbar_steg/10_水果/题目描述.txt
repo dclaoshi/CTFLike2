@@ -1,0 +1,9 @@
+名称
+水果
+
+描述
+flag就隐藏在这些鲜艳的水果中，仔细找就能找到
+
+key格式：CTF{xxx}
+
+解题链接： http://ctf5.shiyanbar.com/stega/pic.png

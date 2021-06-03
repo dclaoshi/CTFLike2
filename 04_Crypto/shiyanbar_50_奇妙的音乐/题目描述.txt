@@ -1,0 +1,9 @@
+名称
+奇妙的音乐
+
+描述
+据说flag就藏在这段音乐中，请仔细听。
+
+格式：CTF{}
+
+解题链接： http://ctf5.shiyanbar.com/crypto/123.zip

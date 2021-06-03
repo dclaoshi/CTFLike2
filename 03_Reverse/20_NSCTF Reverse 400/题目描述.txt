@@ -1,0 +1,9 @@
+名称
+NSCTF Reverse 400
+
+描述
+py2exe的逆向
+
+格式：flag:{}
+
+解题链接： http://ctf5.shiyanbar.com/re/Reverse400.exe

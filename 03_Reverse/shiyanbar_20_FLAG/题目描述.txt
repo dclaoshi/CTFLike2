@@ -1,0 +1,6 @@
+名称
+FLAG
+
+描述
+请输入 FLAG，下面的页面会告诉你 FLAG 是否正确
+解题链接： http://ctf5.shiyanbar.com/qwctf/flag-checker.html

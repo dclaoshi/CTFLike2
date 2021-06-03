@@ -1,0 +1,6 @@
+名称
+流
+
+描述
+flag格式：CTF{XXXX}
+解题链接： http://ctf5.shiyanbar.com/stega/liu.vmdk

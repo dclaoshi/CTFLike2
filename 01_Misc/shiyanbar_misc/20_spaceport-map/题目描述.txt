@@ -1,0 +1,6 @@
+名称
+spaceport-map
+
+描述
+The map of the spaceport is hard to parse, but you're pretty sure there is some hidden information, somewhere...
+解题链接： http://ctf5.shiyanbar.com/misc/spaceport-map/spaceportmap.gif

@@ -1,0 +1,10 @@
+名称
+Just Click
+
+描述
+拿到答案需要正确地点击按钮
+
+格式：simCTF{ }
+
+
+解题链接： http://ctf5.shiyanbar.com/re/rev4.exe

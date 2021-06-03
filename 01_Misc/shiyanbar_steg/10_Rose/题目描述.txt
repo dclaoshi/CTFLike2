@@ -1,0 +1,6 @@
+名称
+Rose
+
+描述
+从图片寻找隐藏的key值
+解题链接： http://ctf5.shiyanbar.com/stega/rose.jpg

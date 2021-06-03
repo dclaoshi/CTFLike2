@@ -1,0 +1,7 @@
+名称
+MD5之守株待兔，你需要找到和系统锁匹配的钥匙
+
+描述
+从系统锁下手，通过get方式key字段提交答案，直到您的钥匙与系统锁相等则成功。
+格式：CTF{}
+解题链接： http://ctf5.shiyanbar.com/misc/keys/keys.php

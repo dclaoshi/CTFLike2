@@ -1,0 +1,7 @@
+名称
+认真你就输了
+
+描述
+在表格里？在表格里！
+格式:CTF{**}
+解题链接： http://ctf5.shiyanbar.com/stega/excel_data.xlsx

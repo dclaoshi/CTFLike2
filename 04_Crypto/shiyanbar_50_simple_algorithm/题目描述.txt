@@ -1,0 +1,6 @@
+名称
+simple algorithm
+
+描述
+The flag is encrypted by this code, can you decrypt it after finding the system?
+解题链接： http://ctf5.shiyanbar.com/crypto/simple_algorithm.zip

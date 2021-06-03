@@ -1,0 +1,9 @@
+名称
+你没有见过的加密！
+
+描述
+MDEzMjE5MDAyMTg0MTUzMjQwMTQ0MDc3MjUzMDk2MTc1MTUzMTE4MTg4MDEwMDA2MTg4MDA0MjM4MDI1MTA3MTU4MTc5MTM4
+
+请喜欢linux的你，自己动手写出解密代码吧
+格式：flag{ }
+解题链接： test.rar

@@ -1,0 +1,6 @@
+名称
+1000
+
+描述
+答案格式：CTF{}
+解题链接： http://ctf5.shiyanbar.com/misc/1000.exe

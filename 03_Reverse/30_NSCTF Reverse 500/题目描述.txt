@@ -1,0 +1,9 @@
+名称
+NSCTF Reverse 500
+
+描述
+pyc的反编译
+
+格式：flag:{}
+
+解题链接： http://ctf5.shiyanbar.com/re/Reverse500.pyc

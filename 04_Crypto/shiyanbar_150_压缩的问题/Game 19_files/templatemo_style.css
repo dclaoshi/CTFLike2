@@ -1,0 +1,253 @@
+body {
+	margin: 0;
+	padding: 0;
+	line-height: 1.5em;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	background: #FFFFFF;
+}
+
+a:link, a:visited { color: #edad0f; text-decoration: none; font-weight: normal; } 
+a:active, a:hover { color: #edad0f; text-decoration: underline; }
+
+.cleaner {
+	clear: both;
+	width: 100%;
+	height: 0px;
+	font-size: 1px;	
+}
+
+p {
+	margin: 0px;
+	padding: 0px;
+}
+
+img {
+	margin: 0px;
+	padding: 0px;
+	border: none;
+}
+
+.cleaner_w10 {
+	float: left;
+	width: 10px;
+	height: 100%;
+	font-size: 1px;	
+}
+
+
+.cleaner_h20 {
+	clear: both;
+	width: 100%;
+	height: 20px;
+	font-size: 1px;	
+}
+
+
+.cleaner_h40 {
+	clear: both;
+	width: 100%;
+	height: 40px;
+	font-size: 1px;	
+}
+
+.cleaner_w50 {
+	float: left;
+	width: 50px;
+	height: 1px;
+	font-size: 1px;	
+}
+
+.horizontal_divider_01 {
+	clear: both;
+	width: 100%;
+	height: 2px;
+	font-size: 1px;	
+	background: url(images/templatemo_horizontal_divider.jpg) repeat-x;
+}
+
+.rc_btn_01 a {
+	float: left;
+	clear: both;
+	display: block;
+	width: 100px;
+	height: 22px;
+	padding: 4px 0 0 10px;
+	background: url(images/tempatemo_button_01.jpg) no-repeat;
+	color: #000000;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+}
+.rc_btn_01 a:hover {
+	color: #996600;
+}
+
+#templatemo_container {
+	width: 900px;
+	margin: 0 auto;
+	padding: 0 30px 10px 30px;
+} 
+
+#templatemo_header {
+	width: 900px;
+	height: 50px;
+	margin: 0px;
+	padding: 0px;
+	background: #FFFFFF;
+}
+
+#templatemo_header #website_title {
+	width: 900px;
+	padding: 100px 0 0 0;
+	text-align: center;
+}
+
+#website_title #title {
+	font-size: 50px;
+	font-weight: bold;
+	color: #000000;
+	margin-bottom: 15px;
+}
+
+#website_title #salgon {
+	clear: both;
+	font-size: 18px;
+	font-weight: bold;
+	color:#cccccc;
+}
+
+/* banner */
+#templatemo_menu{
+	float: left;
+	width: 900px;
+	height: 50px;
+	background: #FFFFFF;
+}
+
+#templatemo_menu ul {
+	width: 600px;
+	margin: 26px 0 0 160px;
+	padding: 0px;
+	list-style: none;
+}
+
+#templatemo_menu ul li{
+	display: inline;
+}
+
+#templatemo_menu ul li a{
+	float: left;
+	padding: 0 20px;
+	font-size: 24px;
+	text-align: center;
+	text-decoration: none;
+	background: #ffffff;
+	color: #000000;
+	font-weight: bold;
+	outline: none;
+}
+#templatemo_menu ul li b{
+	float: left;
+	padding: 0 20px;
+	font-size: 24px;
+	text-align: center;
+	text-decoration: none;
+	background: #FFFFFF;
+	color: #000000;
+	font-weight: bold;
+	outline: none;
+}
+
+#templatemo_menu li a:hover, #templatemo_menu li .current{
+	color: #000000;
+}
+/* end of menu*/
+/* end of banner */
+
+/* content */
+
+#templatemo_content_wrapper {
+	clear: both;
+	width: 900px;
+	margin:0 auto;
+	background: url(images/templatemo_content_repeat.jpg) repeat-y;	
+}
+
+#templatemo_content {
+	padding: 50px 20px 0 20px;
+	background: #FFFFFF;
+}
+
+#templatemo_content img{
+	float: left;
+	margin: 3px 15px 5px 0;
+	border: 5px solid #10100f;
+}
+
+#templatemo_content p{
+	text-align: justify;
+	margin-bottom: 20px;
+	font-size: 16px;
+}
+
+#templatemo_content .content_title_01{
+	color: #000000;
+	font-size: 24px;
+	padding-bottom: 10px;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+
+#templatemo_content .content_title_02{
+	color: #000000;
+	font-size: 18px;
+	padding-bottom: 10px;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+
+#templatemo_content .column_02 {
+	float: left;
+	width: 325px;
+}
+
+#templatemo_content .news_section {
+	padding-left: 30px;
+	background:#FFFFFF;
+}
+
+#templatemo_content  .column_02 p{
+	margin-bottom: 0px;
+}
+
+#templatemo_content .column_02 ul {
+	margin: 20px 0 0 30px;
+	padding: 0px;
+}
+
+#templatemo_content .column_02 li {
+	padding: 0 0 5px 0;
+}
+
+#templatemo_content .news_title {
+	font-weight: bold;
+}
+
+/* footer */
+#templatemo_footer {
+	clear: both;
+	width: 900px;
+	height: 35px;
+	padding-top: 55px; 
+	color: #000000;
+	text-align: center;	
+	background: #FFFFFF;
+}
+
+#templatemo_footer a{
+	color: #000000;
+	font-weight: bold;
+}
+/* end of footer */

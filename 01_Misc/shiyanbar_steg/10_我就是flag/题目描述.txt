@@ -1,0 +1,9 @@
+名称
+我就是flag
+
+描述
+flag究竟藏在哪了呢
+
+提交形式：flag{XXX}
+
+解题链接： http://ctf5.shiyanbar.com/stega/bestwing12345678.bmp

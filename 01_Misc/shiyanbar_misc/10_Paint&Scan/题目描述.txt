@@ -1,0 +1,9 @@
+名称
+Paint&Scan
+
+描述
+画一画，扫一扫，图出则flag见...
+
+格式：CTF{ }
+
+解题链接： Paint_Scan.zip

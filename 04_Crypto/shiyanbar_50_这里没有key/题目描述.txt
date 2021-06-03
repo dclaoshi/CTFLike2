@@ -1,0 +1,6 @@
+名称
+这里没有key
+
+描述
+你说没有就没有啊，俺为啥要听你的啊
+解题链接： http://ctf5.shiyanbar.com:8080/4/index.html

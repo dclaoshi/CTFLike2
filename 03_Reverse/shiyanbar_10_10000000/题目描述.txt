@@ -1,0 +1,7 @@
+名称
+10000000
+
+描述
+寻找正确的输入
+
+解题链接： http://ctf5.shiyanbar.com/423/re/reverse3.exe

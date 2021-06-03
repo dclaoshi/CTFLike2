@@ -1,0 +1,6 @@
+名称
+ruby
+
+描述
+一切从 ruby 开始！
+解题链接： http://ctf5.shiyanbar.com/qwctf/doll.rb

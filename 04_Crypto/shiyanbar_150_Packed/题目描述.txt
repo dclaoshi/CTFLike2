@@ -1,0 +1,11 @@
+名称
+Packed
+
+描述
+We just found a dead robot. It seems there is some useful data left but somehow it got confused with other data and now we don't know what's useful and what's junk. We just know there is only one way to go but there are many dead ends.
+
+Announcements:
+
+Think outside the box - being several types at once like an animal that can change its color. Excuse the inaccuracy, but that's what you're searching for.
+
+解题链接： http://ctf5.shiyanbar.com/crypto/Packed/packed.rar

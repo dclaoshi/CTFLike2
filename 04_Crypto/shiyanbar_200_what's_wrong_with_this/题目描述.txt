@@ -1,0 +1,11 @@
+名称
+what's wrong with this
+
+描述
+We managed to get this package of the robots servers. We managed to determine that it is some kind of compiled bytecode. But something is wrong with it. Our usual analysis failed - so we have to hand this over to you pros. We only know this: The program takes one parameter and it responds with "Yup" if you have found the secret code, with "Nope" else. We expect it should be obvious how to execute it.
+
+
+
+我们设法获得了这个机器人服务器包。 我们设法确定它是某种编译的字节码。 但它有些问题。 我们通常的分析失败了 - 所以我们不得不把它交给你们。 我们只知道这个：程序接受一个参数，如果你找到了密码，它会以“Yup”响应，而“Nope”则是。 我们期望它应该是如何执行它的。
+
+附件 hello.tar.gz

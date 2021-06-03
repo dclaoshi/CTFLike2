@@ -1,0 +1,9 @@
+名称
+无处不在的广告
+
+描述
+这次他们决定把它藏起来，你能找到他么？
+
+格式：simCTF{ }
+
+解题链接： http://ctf5.shiyanbar.com/stega/trim.png

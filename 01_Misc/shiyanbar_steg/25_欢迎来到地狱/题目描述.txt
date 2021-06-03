@@ -1,0 +1,6 @@
+名称
+欢迎来到地狱
+
+描述
+连环套哦。格式CTF{xxxx}。
+解题链接： http://ctf5.shiyanbar.com/stega/hell/欢迎来到地狱.zip

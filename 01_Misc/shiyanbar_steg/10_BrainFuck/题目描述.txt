@@ -1,0 +1,9 @@
+名称
+BrainFuck
+
+描述
+图片很诡异
+
+格式：CTF{ }
+
+解题链接： http://ctf5.shiyanbar.com/stega/doge.jpg

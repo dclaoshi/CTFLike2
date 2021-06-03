@@ -1,0 +1,9 @@
+名称
+复杂的QR_code
+
+描述
+从二维码中找
+
+格式：CTF{ }
+
+解题链接： http://ctf5.shiyanbar.com/stega/QR_code.png

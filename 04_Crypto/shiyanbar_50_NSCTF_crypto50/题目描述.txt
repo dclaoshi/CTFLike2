@@ -1,0 +1,5 @@
+名称
+NSCTF crypto50
+
+描述
+神秘的字符串：U2FsdGVkX1+qtU8KEGmMJwGgKcPUK3XBTdM+KhNRLHSCQL2nSXaW8++yBUkSylRp

@@ -1,0 +1,9 @@
+名称
+神秘字母
+
+描述
+神秘字母dloguszijluswogany而旁边的矩阵是1 2，快找出flag吧 0 1
+
+格式：simCTF{ } 
+
+解题链接： http://ctf5.shiyanbar.com/crypto/zimu.html

@@ -1,0 +1,7 @@
+名称
+Snake
+
+描述
+格式：CTF{}
+
+解题链接： http://ctf5.shiyanbar.com/misc/snake.jpg

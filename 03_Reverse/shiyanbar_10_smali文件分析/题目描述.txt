@@ -1,0 +1,6 @@
+名称
+smali文件分析
+
+描述
+反汇编dex文件，分析生成的smali文件代码，计算得出flag 格式为：CTF{}
+解题链接： http://ctf5.shiyanbar.com/re/Hello.dex

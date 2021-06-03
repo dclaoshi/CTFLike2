@@ -1,0 +1,9 @@
+名称
+女神又和大家见面了
+
+描述
+不用提示
+
+格式：SimCTF{}
+
+解题链接： http://ctf5.shiyanbar.com/stega/3.jpg

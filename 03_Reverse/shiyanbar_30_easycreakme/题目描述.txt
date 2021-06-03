@@ -1,0 +1,9 @@
+名称
+easycreakme
+
+描述
+这是一个简单程序，但需要花费时间去进行分析，找出攻击的指令。
+
+格式是ctf{}
+
+解题链接： http://ctf5.shiyanbar.com/reverse/easycreakme/Easy_CrackMe.exe.bak

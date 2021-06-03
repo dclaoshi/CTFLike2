@@ -1,0 +1,6 @@
+名称
+rsarsa
+
+描述
+Math is cool! Use the RSA algorithm to decode the secret message, c, p, q, and e are parameters for the RSA algorithm.
+解题链接： http://ctf5.shiyanbar.com/crypto/rsarsa/rsa.txt

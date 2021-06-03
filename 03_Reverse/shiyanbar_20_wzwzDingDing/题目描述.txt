@@ -1,0 +1,6 @@
+名称
+wzwzDingDing
+
+描述
+丘比龙的好友朝鲜王子自从被丁丁击败之后.....推出了王子丁丁! flag: HCTF{'intput'.encode('hex')}
+解题链接： http://ctf5.shiyanbar.com/re/wzwzDingDing

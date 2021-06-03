@@ -1,0 +1,6 @@
+名称
+lol
+
+描述
+smallmumu喜欢打lol
+解题链接： http://ctf5.shiyanbar.com/re/lol.zip

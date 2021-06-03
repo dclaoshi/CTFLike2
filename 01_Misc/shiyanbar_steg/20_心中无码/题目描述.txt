@@ -1,0 +1,7 @@
+名称
+心中无码
+
+描述
+借我一双慧眼吧。
+flag格式: ctf{}
+解题链接： http://ctf5.shiyanbar.com/stega/Lena.png

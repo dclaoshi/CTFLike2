@@ -1,0 +1,6 @@
+名称
+一串奇怪的数
+
+描述
+请解密密文得到该产品的密钥（最后一组密钥即为key）
+解题链接： http://ctf5.shiyanbar.com/crypto/Crypto1

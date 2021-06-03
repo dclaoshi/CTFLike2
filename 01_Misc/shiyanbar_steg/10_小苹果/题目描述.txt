@@ -1,0 +1,6 @@
+名称
+小苹果
+
+描述
+flag格式: CTF{}
+解题链接： http://ctf5.shiyanbar.com/stega/apple.png

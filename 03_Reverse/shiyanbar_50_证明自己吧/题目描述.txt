@@ -1,0 +1,6 @@
+名称
+证明自己吧
+
+描述
+嘿嘿，不用我告诉你怎么做吧，你懂的
+解题链接： http://ctf5.shiyanbar.com/crackme/

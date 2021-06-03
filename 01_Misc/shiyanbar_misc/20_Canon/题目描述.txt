@@ -1,0 +1,9 @@
+名称
+Canon
+
+描述
+这是一段美妙的音乐，但是余音绕梁中，似乎又隐藏着些什么？
+
+格式：CTF{}
+
+解题链接： http://ctf5.shiyanbar.com/misc/mimimi.zip

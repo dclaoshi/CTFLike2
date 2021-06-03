@@ -1,0 +1,7 @@
+名称
+520windows3
+
+描述
+成功启动haha.exe后，会加载protectdrv.sys。请分析该驱动，找出key
+格式：flag:{xxx}
+解题链接： http://ctf5.shiyanbar.com/reverse/520windows3/qudong.rar

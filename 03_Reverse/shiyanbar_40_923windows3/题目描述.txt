@@ -1,0 +1,7 @@
+名称
+923windows3
+
+描述
+HiddenStart.exe启动后会加载Hidden.sys驱动，hidden.sys在关机时会写入注册表，请找出驱动中隐藏的key。
+格式：flag:{xxx}
+解题链接： http://ctf5.shiyanbar.com/reverse/923windows3/w3.rar

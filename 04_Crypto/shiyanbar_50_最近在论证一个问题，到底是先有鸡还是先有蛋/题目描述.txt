@@ -1,0 +1,6 @@
+名称
+最近在论证一个问题，到底是先有鸡还是先有蛋
+
+描述
+Ijm,lo 3wsdr4 6tghu7
+解题链接： http://ctf5.shiyanbar.com/crypto/1/dan.html

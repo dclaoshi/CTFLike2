@@ -1,0 +1,6 @@
+名称
+Chromatophoria
+
+描述
+While refueling at a gas giant, you are hailed by a race of cuttlefish-people who dwell within it. Their transmission is entirely visual; you suspect that they may be communicating through the color values.
+解题链接： http://ctf5.shiyanbar.com/stega/chromatophoria/steg.png

@@ -1,0 +1,9 @@
+名称
+guess
+
+描述
+guess guess guess不出你就out了
+
+flag格式:flag{xxxx}
+
+解题链接： http://ctf5.shiyanbar.com/misc/angrybird.jpg

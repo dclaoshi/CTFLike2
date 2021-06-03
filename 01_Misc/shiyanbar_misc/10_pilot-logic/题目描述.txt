@@ -1,0 +1,6 @@
+名称
+pilot-logic
+
+描述
+You've gotten a partial dump of the disk from the hangar's machine, and you're pretty sure the pilot's password is cleverly hidden somewhere within it...
+解题链接： pilot_image

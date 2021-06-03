@@ -1,0 +1,6 @@
+名称
+我喜欢培根
+
+描述
+key: CTF{}
+解题链接： http://ctf5.shiyanbar.com/crypto/enc1.txt

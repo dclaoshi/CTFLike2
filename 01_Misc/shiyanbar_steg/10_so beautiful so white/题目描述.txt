@@ -1,0 +1,9 @@
+名称
+so beautiful so white
+
+描述
+压缩包的密码就藏在这幅白色图片中，仔细找找看吧
+
+格式：CTF{}
+
+解题链接： http://ctf5.shiyanbar.com/stega/white.zip

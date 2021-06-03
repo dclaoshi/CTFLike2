@@ -1,0 +1,9 @@
+名称
+flag.xls
+
+描述
+lag就在excel表格里，仔细找找！
+
+key格式：CTF{xxx}
+
+解题链接： flag.xls

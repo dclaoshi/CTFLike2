@@ -1,0 +1,9 @@
+名称
+想看正面？那就要看仔细了
+
+描述
+看背影是不是很nice！想看正面？那就要看仔细了！
+
+格式：simCTF{ }
+
+解题链接： http://ctf5.shiyanbar.com/stega/meinv.jpg

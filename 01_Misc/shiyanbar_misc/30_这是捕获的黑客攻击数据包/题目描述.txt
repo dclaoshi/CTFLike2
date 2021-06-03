@@ -1,0 +1,6 @@
+名称
+这是捕获的黑客攻击数据包，Administrator用户的密码在此次攻击中泄露了，你能找到吗？
+
+描述
+FLAG为Administrator的明文密码
+解题链接： http://ctf5.shiyanbar.com/misc/misc400.zip

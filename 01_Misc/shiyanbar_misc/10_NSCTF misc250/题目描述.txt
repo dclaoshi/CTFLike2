@@ -1,0 +1,9 @@
+名称
+NSCTF misc250
+
+描述
+小绿在学习了wireshark后，在局域网内抓到了室友下载的小东东0.0 你能帮他找到吗？
+
+格式：flag{}
+
+解题链接： sniffer.pcapng

@@ -1,0 +1,6 @@
+名称
+bin100(ebCTF 2013)
+
+描述
+Beat our dice game and get the flag
+解题链接： http://ctf5.shiyanbar.com/re/Dice.exe

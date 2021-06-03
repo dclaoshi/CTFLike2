@@ -1,0 +1,10 @@
+名称
+A记录
+
+描述
+他在看什么视频，好像很好看，不知道是什么网站的。
+还好我截取了他的数据包，找呀找。
+key就是网站名称。格式ctf{key}
+tip:A记录的第一条。
+
+解题链接： http://ctf5.shiyanbar.com/misc/shipin.cap

@@ -1,0 +1,6 @@
+名称
+可启动的磁盘镜像
+
+描述
+我们找到一个可以启动的磁盘镜像，可是启动之后告诉我们 It's BROKEN!，怎么办？
+解题链接： http://ctf5.shiyanbar.com/qwctf/broken.img

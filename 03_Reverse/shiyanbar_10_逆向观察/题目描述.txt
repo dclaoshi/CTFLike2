@@ -1,0 +1,6 @@
+名称
+逆向观察
+
+描述
+a simple reverse view
+解题链接： http://ctf5.shiyanbar.com/reverse/rev50/rev50

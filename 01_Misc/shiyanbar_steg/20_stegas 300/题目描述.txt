@@ -1,0 +1,9 @@
+名称
+stegas 300
+
+描述
+分析音频波形
+
+格式:flag{xxx}
+
+解题链接： http://ctf5.shiyanbar.com/stega/siri_audio/siri_audio.zip

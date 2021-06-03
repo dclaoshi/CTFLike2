@@ -1,0 +1,6 @@
+名称
+RSANG(Asis CTF 2013)
+
+描述
+这是一条被N的素因子加密的信息，尝试解密它。
+解题链接： http://ctf5.shiyanbar.com/crypto/enc.txt

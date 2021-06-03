@@ -1,0 +1,10 @@
+名称
+100w
+
+描述
+点开解题链接会下载一个100w.exe的软件，需要对软件进行逆向，破解等操作，得到一个password，输入正确的password即可弹出flag。在答题界面输入正确的flag即可得分。此题主要考察对软件的逆向，破解和代码实现的知识。
+
+
+flag格式: CTF{xxxxx}
+
+解题链接： http://ctf5.shiyanbar.com/re/100w.exe

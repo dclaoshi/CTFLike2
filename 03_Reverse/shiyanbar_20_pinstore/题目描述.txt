@@ -1,0 +1,6 @@
+名称
+pinstore
+
+描述
+格式：Flag:xxx
+解题链接： http://ctf5.shiyanbar.com/reverse/pinstore/pinstore.apk

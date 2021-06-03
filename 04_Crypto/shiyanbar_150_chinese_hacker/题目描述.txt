@@ -1,0 +1,6 @@
+名称
+chinese hacker
+
+描述
+那一夜，你伤害你，那一夜，我看见了一堆骷髅头
+解题链接： http://ctf5.shiyanbar.com/web/2/

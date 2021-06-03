@@ -1,0 +1,7 @@
+名称
+打不开的文件
+
+描述
+咦！这个文件怎么打不开？
+
+解题链接： http://ctf5.shiyanbar.com/423/stego/xx.gif
