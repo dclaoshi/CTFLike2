@@ -1,0 +1,6 @@
+名称
+内网攻击数据包，请分析
+
+描述
+key值为syclover明文密码
+解题链接： http://ctf5.shiyanbar.com/misc/misc300.zip

@@ -1,0 +1,40 @@
+00:22 <IceBot> You can see more info about any of these commands by doing !help <command> (e.g. !help time)
+00:22 <IceBot> ADMIN         save  quit  msg  part  me  join  set  mode
+00:22 <IceBot> ADMINCHANNEL  unquiet  topic  kickban  kick  tmask  showmask  quiet
+00:22 <IceBot>               unban  ban
+00:22 <IceBot> ANNOUNCE      announce
+00:22 <IceBot> CALC          py  wa  c
+00:22 <IceBot> CLOCK         settz  settimeformat  getchanneltz  t  gettz
+00:22 <IceBot>               setchanneltimeformat  gettimeformat  setchanneltz
+00:22 <IceBot>               getchanneltimeformat
+00:22 <IceBot> CORETASKS     blocks  useserviceauth
+00:22 <IceBot> COUNTDOWN     countdown
+00:22 <IceBot> CURRENCY      btc  cur
+00:22 <IceBot> DICE          choose  d
+00:22 <IceBot> ETYMOLOGY     ety
+00:22 <IceBot> FLAG          flag
+00:22 <IceBot> HELP          help
+00:22 <IceBot> IP            iplookup
+00:22 <IceBot> ISUP          isup
+00:22 <IceBot> LMGTFY        lmgtfy
+00:22 <IceBot> MOVIE         movie
+00:22 <IceBot> RAND          rand
+00:22 <IceBot> REDDIT        redditor  setsafeforwork  getsafeforwork
+00:22 <IceBot> RELOAD        update  load  reload
+00:22 <IceBot> REMIND        in  at
+00:22 <IceBot> SAFETY        safety
+00:22 <IceBot> SEARCH        duck  suggest  search
+00:22 <IceBot> SEEN          seen
+00:22 <IceBot> SPELLCHECK    spellcheck
+00:22 <IceBot> TELL          tell
+00:22 <IceBot> TLD           tld
+00:22 <IceBot> TRANSLATE     translate  mangle
+00:22 <IceBot> UNICODE_INFO  u
+00:22 <IceBot> UNITS         temp  length  weight
+00:22 <IceBot> UPTIME        uptime
+00:22 <IceBot> URL           title
+00:22 <IceBot> VERSION       version
+00:22 <IceBot> WEATHER       setlocation  weather
+00:22 <IceBot> WIKIPEDIA     w
+00:22 <IceBot> WIKTIONARY    wt
+00:22 <IceBot> XKCD          xkcd
