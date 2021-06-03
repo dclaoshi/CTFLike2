@@ -4,11 +4,11 @@
 
 此题目虽然放在第一个，分数也不高，但是还是比较复杂的。
 
-![](http://www.xianxianlabs.com:80/wp-content/uploads/2018/07/aa09c29a88f1b30c98a15dc193bc88c1.png)
+![](images/2021-06-03-23-31-14.png)
 
 抓包发现一个`提示`
 
-![](http://www.xianxianlabs.com:80/wp-content/uploads/2018/07/ba3ad75403b8693ea65bb528c3fd9c86.png)
+![](images/2021-06-03-23-31-28.png)
 
 查看`test.php`，发现是`index.php`的源码。
 
@@ -100,17 +100,23 @@ if(isset($_POST['id'])){
 5. 如果plain无法反序列化，则die并返回plain的base64编码数据；如果可以序列化，则将id值拼接到sql语句中“select * from users limit .$info['id']  ,0”，并提交到数据库，返回数据，并附在返回的Hello后。
 
 根据程序流程分析，我们的目标是实现sql注入，拿到数据库的内容应该就可以获取到Flag了。目前的sql语句为
+
 ```sql
 $sql="select * from users limit ".$info['id'].",0";
 ```
+
 根据sql语句，可以开看到，这条语句永远都返回的0条记录，除非能够进行注入，将后面的`,0`注释掉，才能够获取到数据，如使用语句`1,100#`。
 
 由于过滤了`#、--`，所以尝试用`%00`，用Burp Repeater尝试，将`id=1 %00`，post提交，然后用返回的iv、cipher值，作为第二次的cookie，然后去掉`id=`（这样做的原因是因为源代码如果id参数不存在，则获取到cookie里的各种值作为查询的参数，而cookie内的值为上一次的查询值），再次post，结果能返回`Hello!rootzz`。
 
 如下图
-![](http://www.xianxianlabs.com:80/wp-content/uploads/2018/07/c88b2bba218768fd1e01f023a1762152.png)
+
+![](images/2021-06-03-23-31-58.png)
+
 将cookie按照服务器设置要求进行设置
-![](http://www.xianxianlabs.com:80/wp-content/uploads/2018/07/b7af6f0acfa24c36d7ff08492c84cb4c.png)
+
+![](images/2021-06-03-23-32-09.png)
+
 
 没有按到flag，推测要获取整个库第一次提交id时，做了过滤，但是第二次提交iv和cipher值，是不会做过滤的，使用cbc翻转一个字节进行攻击（发送一个可以绕过字符过滤的id值，然后通过cbc翻转攻击将一部分需要改变的字符修改为我们想要的，达到sql注入目的）。
 
@@ -121,7 +127,8 @@ $sql="select * from users limit ".$info['id'].",0";
 5. 把iv_new、cipher_new，去掉id=xx  post到服务器即可得到  id=1# 的结果，即Hello!rootzz
 
 使用脚本
-```
+
+```python
 #!/usr/bin/env python
 #-*- coding: utf-8 -*-
 """

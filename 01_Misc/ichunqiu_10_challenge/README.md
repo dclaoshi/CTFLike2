@@ -25,6 +25,9 @@
 ## 解题思路
 ---
 
+![](images/ctf-2021-06-03-17-09-18.png)
+
+flag{hex2str_challenge}
 
 ## 参考
 ---
