@@ -14,11 +14,11 @@ synt{mur_VF_syn9_svtug1at}
 
 ## 主要知识点
 ---
-
+rot 13
 
 ## 题目分值
 ---
-
+10
 
 ## 部署方式
 ---
@@ -27,6 +27,9 @@ synt{mur_VF_syn9_svtug1at}
 ## 解题思路
 ---
 
+![](images/ctf-2021-06-05-18-02-56.png)
+
+flag{zhe_IS_fla9_fight1ng}
 
 ## 参考
 ---

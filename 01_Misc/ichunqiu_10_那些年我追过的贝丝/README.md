@@ -14,11 +14,11 @@ ZmxhZ3tpY3FlZHVfZ29nb2dvX2Jhc2U2NH0=
 
 ## 主要知识点
 ---
-
+base64
 
 ## 题目分值
 ---
-
+10
 
 ## 部署方式
 ---
@@ -27,6 +27,9 @@ ZmxhZ3tpY3FlZHVfZ29nb2dvX2Jhc2U2NH0=
 ## 解题思路
 ---
 
+![](images/ctf-2021-06-05-17-49-36.png)
+
+flag{icqedu_gogogo_base64}
 
 ## 参考
 ---

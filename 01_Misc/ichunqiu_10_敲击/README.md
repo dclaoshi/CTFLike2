@@ -18,11 +18,11 @@ flag格式为：flag{小写的字符串}
 
 ## 主要知识点
 ---
-
+键盘密码
 
 ## 题目分值
 ---
-
+10
 
 ## 部署方式
 ---
@@ -31,6 +31,10 @@ flag格式为：flag{小写的字符串}
 ## 解题思路
 ---
 
+wdvtdz  qsxdr werdzxc  esxcfr uygbn
+x       v     z        o      c
 
+所以是flag{xvzoc}
+ 
 ## 参考
 ---

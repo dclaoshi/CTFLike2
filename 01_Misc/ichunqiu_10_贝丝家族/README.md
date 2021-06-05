@@ -16,11 +16,11 @@ MZWGCZ33MVZGQZLJL5STQOJTGRPWK4SVJ56Q====
 
 ## 主要知识点
 ---
-
+base32
 
 ## 题目分值
 ---
-
+10
 
 ## 部署方式
 ---
@@ -29,6 +29,9 @@ MZWGCZ33MVZGQZLJL5STQOJTGRPWK4SVJ56Q====
 ## 解题思路
 ---
 
+![](images/ctf-2021-06-04-10-15-16.png)
+
+flag{erhei_e8934_erUO}
 
 ## 参考
 ---

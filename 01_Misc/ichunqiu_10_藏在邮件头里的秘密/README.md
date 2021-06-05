@@ -12,11 +12,11 @@ flag{ichunqiu_=E6=8A=80=E6=9C=AF=E6=9C=89=E6=B8=A9=E5=BA=A6}
 
 ## 主要知识点
 ---
-
+Quoted-Printa
 
 ## 题目分值
 ---
-
+10
 
 ## 部署方式
 ---
@@ -25,6 +25,9 @@ flag{ichunqiu_=E6=8A=80=E6=9C=AF=E6=9C=89=E6=B8=A9=E5=BA=A6}
 ## 解题思路
 ---
 
+![](images/ctf-2021-06-05-01-16-48.png)
+
+flag{ichunqiu_技术有温度}
 
 ## 参考
 ---

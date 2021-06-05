@@ -14,11 +14,11 @@ try to find the flag
 
 ## 主要知识点
 ---
-
+rot
 
 ## 题目分值
 ---
-
+10
 
 ## 部署方式
 ---
@@ -27,6 +27,9 @@ try to find the flag
 ## 解题思路
 ---
 
+![](images/ctf-2021-06-05-17-48-41.png)
+
+flag{4c850c5b3b2756e67a91bad8e046ddac}
 
 ## 参考
 ---

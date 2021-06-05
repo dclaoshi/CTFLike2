@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<string.h>
+void main() {
+char str[100]="";
+int i;
+int len;
+printf("input string:\n");
+gets(str);
+len=strlen(str);
+printf("result:\n");
+for(i=0;i<len+1;i++)
+{
+    putchar(str[len-i]);
+}
+printf("\n");
+}
+
