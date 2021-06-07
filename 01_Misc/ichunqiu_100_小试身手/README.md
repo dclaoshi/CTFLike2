@@ -20,7 +20,7 @@ JCTF 2014
 
 ## 题目分值
 ---
-
+100
 
 ## 部署方式
 ---
@@ -29,6 +29,9 @@ JCTF 2014
 ## 解题思路
 ---
 
+解压后在res/raw/hehe中找到flag
+
+ctf{adkankjasnfmasncmansddfmnasm}
 
 ## 参考
 ---

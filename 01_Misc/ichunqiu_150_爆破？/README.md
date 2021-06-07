@@ -25,6 +25,9 @@
 ## 解题思路
 ---
 
+![](images/ctf-2021-06-07-16-21-05.png)
+
+./pkcrack -c readme.txt -p readme.txt -C Desktop.zip -P readme.zip -d ok.zip
 
 ## 参考
 ---
