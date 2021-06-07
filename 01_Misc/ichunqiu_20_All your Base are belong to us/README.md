@@ -16,7 +16,7 @@ IceCTF
 
 ## 题目分值
 ---
-
+20
 
 ## 部署方式
 ---
@@ -25,6 +25,9 @@ IceCTF
 ## 解题思路
 ---
 
+![](images/ctf-2021-06-06-23-32-54.png)
+
+IceCTF{al1_my_bases_are_yours_and_all_y0ur_bases_are_mine}
 
 ## 参考
 ---

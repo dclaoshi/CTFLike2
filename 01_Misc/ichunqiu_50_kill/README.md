@@ -1,4 +1,4 @@
-# 题目名称
+# kill
 
 ## 题目描述
 ---
@@ -16,7 +16,7 @@ Is kill can fix? Sign the autopsy file?
 
 ## 题目分值
 ---
-
+50
 
 ## 部署方式
 ---
@@ -25,6 +25,9 @@ Is kill can fix? Sign the autopsy file?
 ## 解题思路
 ---
 
+修复了半天pcapng无果，发现flag就在文件中
+
+![](images/ctf-2021-06-07-09-36-16.png)
 
 ## 参考
 ---

@@ -25,6 +25,11 @@ IceCTF
 ## 解题思路
 ---
 
+官方的IRC挂了，自己下个客户端：mIRC，设置服务器为glitch.is，端口设置为6667，然后随便起个名字
+
+右键查看Glitch的whois信息，会发现@#6470e394cb_flagshare，双击进入频道之后，就可以得到flag
+
+IceCTF{pL3AsE_D0n7_5h4re_fL495_JUsT_doNT}
 
 ## 参考
 ---

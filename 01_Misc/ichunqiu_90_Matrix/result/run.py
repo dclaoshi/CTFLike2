@@ -1,43 +1,13 @@
-# Matrix
-
-## 题目描述
----
-```
-I like to approach problems with a fresh perspective and try to visualize the problem at hand. matrix.txt
-```
-
-## 题目来源
----
-IceCTF
-
-## 主要知识点
----
-
-
-## 题目分值
----
-90
-
-## 部署方式
----
-
-
-## 解题思路
----
-
-将题目给出的16进制数字分解成2进制字符串，然后将2进制字符串转为二维码。
-
-```python
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import Image
+import PIL.Image as Image
 import numpy as np
 
 def hex2bin(hexmat):
-   binmattemp = [bin(m)[2:] for m in hexmat]
-   rowlen = max([len(m) for m in binmattemp])
-   binmat = [[0]+[int(b) for b in row.zfill(rowlen)] for row in binmattemp]
+   binmattemp = [bin(m)[2:] for m in hexmat]    #全转成二进制
+   rowlen = max([len(m) for m in binmattemp])   #取最宽的值
+   binmat = [[0]+[int(b) for b in row.zfill(rowlen)] for row in binmattemp]   #用0补齐
 
    print rowlen+1, 'x', len(binmat)
    for i in xrange(len(binmat)):
@@ -51,7 +21,7 @@ def rm_col(binmat, col):
 
 def make_bw_img(binmat, w, h, outfilename, blackbit=0):
 
-   bwmat = [[0 if b==blackbit else 255 for b in row] for row in binmat]
+   bwmat = [[0 if b==blackbit else 255 for b in row] for row in binmat]  #用255表示白，0表示黑
 
    imagesize = (w, h)
    img = Image.fromarray(np.uint8(np.array(bwmat)))
@@ -93,12 +63,6 @@ if __name__ == '__main__':
              0x00000000]
 
    binmat, w, h = hex2bin(hexmat)
-   binmat = rm_col(binmat, 22)
+   binmat = rm_col(binmat, 22)   #发现第七行和第22行多余，故删除
    binmat = rm_col(binmat, 7)
    make_bw_img(binmat, w, h, 'matrix_rmcol.png', blackbit=1)
-```
-
-IceCTF{1F_y0U_l0oK_c1Os3lY_EV3rY7h1N9_i5_1s_4nD_0s}
-
-## 参考
----
