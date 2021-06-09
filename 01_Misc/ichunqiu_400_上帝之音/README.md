@@ -18,7 +18,7 @@ ISC2016训练赛——phrackCTF
 
 ## 题目分值
 ---
-
+400
 
 ## 部署方式
 ---
@@ -27,6 +27,15 @@ ISC2016训练赛——phrackCTF
 ## 解题思路
 ---
 
+每个myisam表都有三个文件：.frm(储存表结构) .myd（储存数据） .myi（储存索引）
+在 MySQL 5.7,默认引擎是innodb，如果要使用myisam，需要指定 engine=myisam。
+
+```
+$ dd if=godwave.wav of=test ibs=1 skip=611848 count=127806 
+127806+0 records in
+249+1 records out
+127806 bytes (128 kB, 125 KiB) copied, 0.129562 s, 986 kB/s
+```
 
 ## 参考
 ---

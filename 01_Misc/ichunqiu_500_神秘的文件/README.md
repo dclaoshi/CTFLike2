@@ -20,7 +20,7 @@ JCTF 2014
 
 ## 题目分值
 ---
-
+500
 
 ## 部署方式
 ---
@@ -29,6 +29,20 @@ JCTF 2014
 ## 解题思路
 ---
 
+使用`StegSolve`将附件给出的图片绿色通道最低为提取保存为一个文件
+
+![](images/ctf-2021-06-09-11-06-41.png)
+
+将得到文件的修改为bmp头，如下
+
+![](images/ctf-2021-06-09-11-08-35.png)
+
+获得flag
+
+![](images/ctf-2021-06-09-11-09-24.png)
+
+flag{D0_n07_10se_y0ur_he4rt}
 
 ## 参考
 ---
+https://wooyun.js.org/drops/JCTF%20Writeup.html
