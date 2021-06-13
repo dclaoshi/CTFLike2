@@ -25,75 +25,35 @@
 ## 解题思路
 ---
 
-Address	Ordinal	Name	Library
-00402000		GetOpenFileNameA	comdlg32
-00402008		lstrcpyA	kernel32
-0040200C		UnmapViewOfFile	kernel32
-00402010		RtlZeroMemory	kernel32
-00402014		MapViewOfFile	kernel32
-00402018		LoadLibraryA	kernel32
-0040201C		GetModuleHandleA	kernel32
-00402020		GetFileSize	kernel32
-00402024		CloseHandle	kernel32
-00402028		CreateFileA	kernel32
-0040202C		CreateFileMappingA	kernel32
-00402030		ExitProcess	kernel32
-00402034		FreeLibrary	kernel32
-0040203C		BzZmxhZ3thc2puMTuser32.dll	user32
-00402040		am51M2hzOWFia2cHBzZmxhZ3thc2puMTuser32.dll	user32
-00402044		YmR3ZTE4bnNnJuam51M2hzOWFia2cHBzZmxhZ3thc2puMTuser32.dll	user32
-00402048		Q0MzBkfXVjpqYmR3ZTE4bnNnJuam51M2hzOWFia2cHBzZmxhZ3thc2puMTuser32.dll	user32
-0040204C		GetWindowTextLengthA==aGQ0MzBkfXVjpqYmR3ZTE4bnNnJuam51M2hzOWFia2cHBzZmxhZ3thc2puMTuser32.dll	user32
-00402050		GetDlgItem	user32
-00402054		EndDialog	user32
-00402058		DialogBoxParamA	user32
-0040205C		wsprintfA	user32
- 
-BzZmxhZ3thc2puMT  am51M2hzOWFia2cH  YmR3ZTE4bnNnJu Q0MzBkfXVjpq  ==aG
+做了很多方式都没有对，最后使用`010 ediotr`查看PE结构是才发现真正的方法
 
+红框内的导入表`WORD HINT`信息要归属于后面`NAME`内容，以这样的形式进行拆分
 
-ZmxhZ3thc2puMT   flag{asjn
-M2hzOWFia2c      3hs9abkg
-NnJuam51M2hzOWFia2c 6rnjnu3hs9abkg
-hzOWFia2cHBz
-aGQ0MzBkfX       hd430d}
+![](images/2021-06-13-17-08-32.png)
 
-aGQ0MzBkfXVjpqYmR3ZTE4bnNnJuam51M2hzOWFia2cHBzZmxhZ3thc2puMT
+使用如下方法将导入表中形如base64的代码进行拆分
 
-aGQ0MzBkfXVjpqYmR3ZTE4bnNnJuam51M2hzOWFia2cHBzZmxhZ3thc2puMT
+```
+BzZmxhZ3thc2puMT user32.dll
+am51M2hzOWFia2 cHBzZmxhZ3thc2puMT user32.dll
+YmR3ZTE4bnNn Juam51M2hzOWFia2 cHBzZmxhZ3thc2puMT user32.dll
+aGQ0MzBkfXVj pqYmR3ZTE4bnNn Juam51M2hzOWFia2 cHBzZmxhZ3thc2puMT user32.dll
+```
 
-flag{asjn3hs9abkghd430d}
+在使用分块倒序拼接如如下字符串
 
-GetWindowTextLengthA__aGQ0MzBkfXVjpqYmR3ZTE4bnNnJuam51M2hzOWFia2cHBzZmxhZ3thc2puMTuser32_dll
-aGQ0MzBkfX VjpqYmR3ZTE4bnNnJu am51M2hzOWFia2cHBz ZmxhZ3thc2pu MTuser32_dll	
-YmR3ZTE4bnNnJu am51M2hzOWFia2cHBz ZmxhZ3thc2puMTuser32_dll	
-am51M2hzOWFia2cHBz ZmxhZ3thc2pu MT user32_dll	
-BzZmxhZ3thc2puMTuser32_dll	
+```
+cHBzZmxhZ3thc2puMTJuam51M2hzOWFia2pqYmR3ZTE4bnNnaGQ0MzBkfXVj
 
+```
 
-ZmxhZ3thc2puMT   flag{asjn  1
-am51M2hzOWFia2
-ZmxhZ3thc2pu
-M2hzOWFia2c      3hs9abkg
-NnJuam51M2hzOWFia2c 6rnjnu3hs9abkg
+解码后结果
 
-aGQ0MzBkfX       hd430d}
+![](images/2021-06-13-17-07-48.png)
 
-ZmxhZ3thc2puMT am51M2hzOWFia2cHBZ VjpqYmR3ZTE4bnNnJu aGQ0MzBkfX 
-flag{asjnjnu3hs9abkg.bdwe18nsghd430d}uc¦
-flag{asjn3hs9abkghd430d}
-
-ZmxhZ3thc2pu am51M2hzOWFia2 pqYmR3ZTE4bnNn aGQ0MzBkfX==
-flag{asjnjnu3hs9abkjjbdwe18nsghd430d}
-
-hd430d}ucbdwe18nsgjnu3hs9abppsflag{asjn1
-
-aGQ0MzBkfXVjpqYmR3ZTE4bnNnJuam51M2hzOWFia2cHBzZmxhZ3thc2puMT
-TMup2cht3ZhxmZzBHc2aiFWOzh2M15mauJnNnb4ETZ3RmYqpjVXfkBzM0QGa==
-
-BzZmxhZ3thc2puMT  am51M2hzOWFia2cH  YmR3ZTE4bnNnJu Q0MzBkfXVjpq  ==aG
-ZmxhZ3thc2pu  aGQ0MzBkfX
-flag{asjnjnu3hs9abkdwe18nsghd430d}
+```
+ppsflag{asjn12njnu3hs9abkjjbdwe18nsghd430d}uc
+```
 
 ## 参考
 ---
