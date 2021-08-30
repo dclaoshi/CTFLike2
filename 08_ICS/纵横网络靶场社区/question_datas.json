@@ -1,0 +1,3863 @@
+{
+    "data": [
+        {
+            "id": 3,
+            "name": "Modbus协议",
+            "deal_num": 453,
+            "explain": "黑客通过外网进入一家工厂的控制网络，之后对工控网络中的操作员站系统进行了攻击，最终通过工控协议破坏了正常的业务。我们得到了操作员站在攻击前后的网络流量数据包，我们需要分析流量中的蛛丝马迹，找到FLAG,flag形式为 flag{}",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-14 20:56:30",
+            "author_name": "管理员",
+            "fraction": 10,
+            "author": 1,
+            "level": 1,
+            "writeup_num": 24,
+            "challenge_num": 585,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": 1
+        },
+        {
+            "id": 4,
+            "name": "MMS协议分析",
+            "deal_num": 345,
+            "explain": "工业网络中存在的异常，尝试通过分析PACP流量包，分析出流量数据中的异常 点，并拿到FLAG，flag形式为 flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-14 21:01:44",
+            "author_name": "管理员",
+            "fraction": 10,
+            "author": 1,
+            "level": 1,
+            "writeup_num": 20,
+            "challenge_num": 404,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 5,
+            "name": "大工UDP协议",
+            "deal_num": 297,
+            "explain": "在进行工业企业检查评估工作中，发现了疑似感染恶意软件的上位机。现已提取出上位机通信流量，尝试分析出异常点，获取FLAG，flag形式为 flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-14 21:08:07",
+            "author_name": "管理员",
+            "fraction": 10,
+            "author": 1,
+            "level": 1,
+            "writeup_num": 14,
+            "challenge_num": 313,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 6,
+            "name": "工控蜜罐日志分析",
+            "deal_num": 252,
+            "explain": "工控安全分析人员在互联网上部署了工控仿真蜜罐，通过蜜罐可抓取并分析互联网上针对工业资产的扫描行为，将存在高危扫描行为的IP加入防火墙黑名单可有效减少工业企业对于互联网的攻击面。分析出日志中针对西门子私有通信协议扫描最多的IP，分析该扫描组织,Flag为该IP的域名,，flag形式为 flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-14 21:21:17",
+            "author_name": "管理员",
+            "fraction": 20,
+            "author": 1,
+            "level": 2,
+            "writeup_num": 8,
+            "challenge_num": 282,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 7,
+            "name": "隐信道数据安全分析",
+            "deal_num": 174,
+            "explain": "安全分析人员截获间谍发的秘密邮件，该邮件只有一个MP3文件，安全人员怀疑间谍通过某种private的方式将信息传递出去，尝试分析该文件，获取藏在文件中的数据？flag形式为 flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-14 21:26:31",
+            "author_name": "管理员",
+            "fraction": 20,
+            "author": 1,
+            "level": 2,
+            "writeup_num": 3,
+            "challenge_num": 192,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 8,
+            "name": "工控安全取证",
+            "deal_num": 206,
+            "explain": "有黑客入侵工控设备后在内网发起了大量扫描，而且扫描次数不止一次。\n请分析日志，指出对方第4次发起扫描时的数据包的编号，flag形式为 flag{}",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-14 21:30:46",
+            "author_name": "管理员",
+            "fraction": 20,
+            "author": 1,
+            "level": 2,
+            "writeup_num": 5,
+            "challenge_num": 215,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 9,
+            "name": "隐藏的黑客",
+            "deal_num": 181,
+            "explain": "根据情报得知工控现场发现某SCADA系统被黑客攻破,附件为黑客在目录留下的文件和当时时间段捕获到的一部分流量包,你能根据这些信息分析出蛛丝马迹来么flag形式为 flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-14 21:36:09",
+            "author_name": "管理员",
+            "fraction": 10,
+            "author": 1,
+            "level": 1,
+            "writeup_num": 4,
+            "challenge_num": 230,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 10,
+            "name": "简单流量分析",
+            "deal_num": 187,
+            "explain": "不久前，运维人员在日常安全检查的时候发现现场某设备会不时向某不知名ip发出非正常的ICMP PING包。这引起了运维人员的注意，他在过滤出ICMP包分析并马上开始做应急处理很可能已被攻击的设备。运维人员到底发现了什么?flag形式为 flag{}",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-14 21:39:23",
+            "author_name": "管理员",
+            "fraction": 20,
+            "author": 1,
+            "level": 2,
+            "writeup_num": 2,
+            "challenge_num": 213,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 11,
+            "name": "奇怪的文件",
+            "deal_num": 58,
+            "explain": "在上位机中发现奇怪的文件，你能发现其中的秘密吗？flag形式为 flag{}",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-14 21:43:50",
+            "author_name": "管理员",
+            "fraction": 20,
+            "author": 1,
+            "level": 2,
+            "writeup_num": 1,
+            "challenge_num": 123,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 12,
+            "name": "S7COMM协议分析",
+            "deal_num": 179,
+            "explain": "某10段工控网络中，工业协议中存在异常数据。请通过流量中的数据找寻 flag，flag形式为 flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-14 21:48:23",
+            "author_name": "管理员",
+            "fraction": 30,
+            "author": 1,
+            "level": 3,
+            "writeup_num": 2,
+            "challenge_num": 195,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 13,
+            "name": "组态软件分析",
+            "deal_num": 140,
+            "explain": "一些组态软件中进行会配置连接很多PLC设备信息。我们在SCADA 工程中写入了flag字段，请获取该工程flag，flag形式为 flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-15 09:51:50",
+            "author_name": "管理员",
+            "fraction": 20,
+            "author": 1,
+            "level": 2,
+            "writeup_num": 8,
+            "challenge_num": 149,
+            "question_abilitys_info": [
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 14,
+            "name": "恶意软件后门分析",
+            "deal_num": 155,
+            "explain": "工程师的笔记本上发现了恶意软件，经排查是一款著名针对工业领域的病毒，溯源分析远控样本文件，确认远程C&C连接地址。flag形式为 flag{}",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-15 11:37:47",
+            "author_name": "管理员",
+            "fraction": 10,
+            "author": 1,
+            "level": 1,
+            "writeup_num": 4,
+            "challenge_num": 169,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 15,
+            "name": "恶意软件样本分析",
+            "deal_num": 87,
+            "explain": "某家工厂曾发生过宕机事件案例，为防止再发生此事找了技术人员分析攻击行为流量数据包后发现许多异常端口连接记录，最终得到了这个罪魁祸首的病毒样本，请分析病毒样本尝试复现事件案例帮助工厂实施应急演练,flag形式为 flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-15 11:41:52",
+            "author_name": "管理员",
+            "fraction": 10,
+            "author": 1,
+            "level": 1,
+            "writeup_num": 1,
+            "challenge_num": 105,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 16,
+            "name": "简单的工控固件逆向",
+            "deal_num": 40,
+            "explain": "上位机上具有一个数据采集存储程序，检查登陆部分已经被抽取出来，你能获取到他的口令吗。flag形式为 flag{}",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-15 11:44:29",
+            "author_name": "管理员",
+            "fraction": 40,
+            "author": 1,
+            "level": 4,
+            "writeup_num": 1,
+            "challenge_num": 81,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                },
+                {
+                    "id": 6,
+                    "name": "设备漏洞挖掘"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 17,
+            "name": "另一个隐藏的黑客",
+            "deal_num": 29,
+            "explain": "根据情报得知在工控现场有黑客在对外传输无线信息，被我们捕获到。你能分析出来flag么?flag形式为 flag{}",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-15 11:47:27",
+            "author_name": "管理员",
+            "fraction": 40,
+            "author": 1,
+            "level": 4,
+            "writeup_num": 1,
+            "challenge_num": 45,
+            "question_abilitys_info": [
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 18,
+            "name": "简单的apk逆向",
+            "deal_num": 103,
+            "explain": "工控移动终端逆向，找到apk中的flag，flag形式为 flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-15 12:01:20",
+            "author_name": "管理员",
+            "fraction": 10,
+            "author": 1,
+            "level": 1,
+            "writeup_num": 4,
+            "challenge_num": 134,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 19,
+            "name": "窃取数据的黑客",
+            "deal_num": 99,
+            "explain": "黑客在入侵了工业上位机后试图用网络中合规通信信道传输敏感文件来躲避流量审计设备对异常流量的告警。分析黑客通过工业协议窃取了什么敏感文件。flag格式{}",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-15 12:04:05",
+            "author_name": "管理员",
+            "fraction": 30,
+            "author": 1,
+            "level": 3,
+            "writeup_num": 2,
+            "challenge_num": 107,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 21,
+            "name": "Tesla工业APP",
+            "deal_num": 50,
+            "explain": "某安全团队捕获间谍发送的工业APP，安全人员怀疑间谍以某种方式将机密信息传递出去，尝试分析该文件，找出flag，flag形式为 flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-15 14:07:19",
+            "author_name": "管理员",
+            "fraction": 40,
+            "author": 1,
+            "level": 4,
+            "writeup_num": 1,
+            "challenge_num": 67,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 22,
+            "name": "flag在哪",
+            "deal_num": 55,
+            "explain": "某队在审核一起工业间谍案件中的邮件收发记录时，发现一张可疑图片，初步怀疑这张图片中隐藏了关键秘钥信息，你能找出隐藏的秘钥信息吗？找出的秘钥信息即为 flag，flag形式为 flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-15 14:08:38",
+            "author_name": "管理员",
+            "fraction": 30,
+            "author": 1,
+            "level": 3,
+            "writeup_num": 1,
+            "challenge_num": 74,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 23,
+            "name": "协议分析又来了",
+            "deal_num": 71,
+            "explain": "某安全团队捕获黑客滥用工业互联网协议，分析协议内容，找出flag，flag形式为 flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-15 14:13:39",
+            "author_name": "管理员",
+            "fraction": 30,
+            "author": 1,
+            "level": 3,
+            "writeup_num": 2,
+            "challenge_num": 89,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 24,
+            "name": "西门子DOS攻击事件",
+            "deal_num": 52,
+            "explain": "样本中包含针对西门子工控设备的DOS攻击模式，请分析出发送怎样的UDP数据会使设备宕机。flag格式flag{}",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-15 14:16:08",
+            "author_name": "管理员",
+            "fraction": 30,
+            "author": 1,
+            "level": 3,
+            "writeup_num": 1,
+            "challenge_num": 67,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 25,
+            "name": "黑客的大意",
+            "deal_num": 102,
+            "explain": "黑客在入侵后不小心留下了这样一个文件，请分析文件进行溯源，找到黑客的邮箱。flag格式为flag{邮箱账号}",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-15 14:18:48",
+            "author_name": "管理员",
+            "fraction": 30,
+            "author": 1,
+            "level": 3,
+            "writeup_num": 4,
+            "challenge_num": 107,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 26,
+            "name": "神奇的数据",
+            "deal_num": 49,
+            "explain": "通过网络分析仪器采集的电力传输网络通信数据，请分析出数据中的异常。flag格式{}",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-15 14:23:56",
+            "author_name": "管理员",
+            "fraction": 40,
+            "author": 1,
+            "level": 4,
+            "writeup_num": 1,
+            "challenge_num": 54,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 27,
+            "name": "异常的S7数据",
+            "deal_num": 30,
+            "explain": "这是一个S7comm协议的数据包。但是流量中存在一条异常写入的数据。找出异常流量的ascii数据流。flag格式为flag{ascii数据流}",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-15 14:25:22",
+            "author_name": "管理员",
+            "fraction": 40,
+            "author": 1,
+            "level": 4,
+            "writeup_num": 1,
+            "challenge_num": 60,
+            "question_abilitys_info": [
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 28,
+            "name": "常见的对称加密",
+            "deal_num": 29,
+            "explain": "标准的对称加密发现S盒有问题。Flag格式为:flag{}",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-19 09:51:21",
+            "author_name": "管理员",
+            "fraction": 10,
+            "author": 1,
+            "level": 1,
+            "writeup_num": 0,
+            "challenge_num": 71,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 29,
+            "name": "简单梯形图",
+            "deal_num": 41,
+            "explain": "附件是一个交通信号灯的 FBD 图以及其部分工程文件，请你分析出当按下启动按钮后，信号灯起动控制过程中，信号灯亮，闪，灭的情况。方向及状态代号如下：\n\t东西：EW\n南北：SN\n红灯：R\n绿灯：G\n黄灯：Y\n亮：T\n闪：L\n灭：F\n如流程：南北红灯亮  东西绿灯亮  东西绿灯闪  东西黄灯亮  南北红灯灭 \n可写为：SNRT-EWGT-EWGL-EWYT-SNRF\n注：正确答案写成XXXX-XXXX……XXXX-XXXX（正确答案共计 15 组）后，转为 32 位小写 md5值，该md5值为正确的 flag。Flag格式为:flag{}",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-19 09:52:42",
+            "author_name": "管理员",
+            "fraction": 10,
+            "author": 1,
+            "level": 1,
+            "writeup_num": 1,
+            "challenge_num": 64,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                },
+                {
+                    "id": 6,
+                    "name": "设备漏洞挖掘"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 30,
+            "name": "smart building",
+            "deal_num": 20,
+            "explain": "请尝试分析出当前文件的flag。Flag格式为:flag{}",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-19 09:55:06",
+            "author_name": "管理员",
+            "fraction": 30,
+            "author": 1,
+            "level": 3,
+            "writeup_num": 2,
+            "challenge_num": 24,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 31,
+            "name": "钓鱼邮件分析",
+            "deal_num": 2,
+            "explain": "题目说明：小明负责整个公司的网络运维，收到了一个钓鱼邮件，不明真相的他双击运行，咦，电脑怎么就黑了？请分析该程序并找到flag。注意：请在虚拟机执行！！！！！！flag形式为 flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-19 10:00:21",
+            "author_name": "管理员",
+            "fraction": 30,
+            "author": 1,
+            "level": 3,
+            "writeup_num": 0,
+            "challenge_num": 13,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 32,
+            "name": "基础的协议分析",
+            "deal_num": 0,
+            "explain": "某黑客对工控系统进行渗透，发现某系统通过modbus协议进行数据通信，同时截获以下数据包。请尝试找出数据包的flag。Flag格式为:flag{}",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-19 10:06:03",
+            "author_name": "管理员",
+            "fraction": 30,
+            "author": 1,
+            "level": 3,
+            "writeup_num": 0,
+            "challenge_num": 16,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 33,
+            "name": "图片的奥秘",
+            "deal_num": 30,
+            "explain": "安全运维人员发现黑客在他们眼皮底下传出去了一张图片，你能发现其中的奥秘吗？Flag格式为:flag{}",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-19 10:40:07",
+            "author_name": "管理员",
+            "fraction": 30,
+            "author": 1,
+            "level": 3,
+            "writeup_num": 2,
+            "challenge_num": 41,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                },
+                {
+                    "id": 6,
+                    "name": "设备漏洞挖掘"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 34,
+            "name": "AB协议分析",
+            "deal_num": 1,
+            "explain": "请尝试分析出当前文件的flag。Flag格式为:flag{}",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-19 10:42:03",
+            "author_name": "管理员",
+            "fraction": 30,
+            "author": 1,
+            "level": 3,
+            "writeup_num": 0,
+            "challenge_num": 8,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 35,
+            "name": "Goodluck",
+            "deal_num": 0,
+            "explain": "某日一位运维人员发现电脑桌面上存在一个未知的文件，疑似木马文件，请尝试分析该文件，flag形式为 flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-19 10:43:53",
+            "author_name": "管理员",
+            "fraction": 40,
+            "author": 1,
+            "level": 4,
+            "writeup_num": 0,
+            "challenge_num": 3,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 36,
+            "name": "OPC协议分析",
+            "deal_num": 1,
+            "explain": "在pcap数据包中截获了异常的数据请尝试找出数据包中的flag，flag形式为 flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-19 10:44:43",
+            "author_name": "管理员",
+            "fraction": 40,
+            "author": 1,
+            "level": 4,
+            "writeup_num": 0,
+            "challenge_num": 15,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 37,
+            "name": "流密码",
+            "deal_num": 0,
+            "explain": "流密码真的安全吗？请进行分析流密码中的flag。flag形式为 flag{}",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-19 10:47:21",
+            "author_name": "管理员",
+            "fraction": 50,
+            "author": 1,
+            "level": 5,
+            "writeup_num": 0,
+            "challenge_num": 11,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 38,
+            "name": "隐藏的黑客（进阶版）",
+            "deal_num": 0,
+            "explain": "工控上位机被黑客入侵，运维人员在上面找的了一个可疑文件文件。请你帮助分析该文件，找出异常。flag形式为 flag{}",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-19 10:48:47",
+            "author_name": "管理员",
+            "fraction": 50,
+            "author": 1,
+            "level": 5,
+            "writeup_num": 0,
+            "challenge_num": 6,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                },
+                {
+                    "id": 6,
+                    "name": "设备漏洞挖掘"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 39,
+            "name": "蛛丝马迹",
+            "deal_num": 0,
+            "explain": "运维人员在运维的过程中发现在上位机中发现可疑文件，你能从中帮助发现一些蛛丝马迹么。flag形式为 flag{}",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-19 10:50:12",
+            "author_name": "管理员",
+            "fraction": 50,
+            "author": 1,
+            "level": 5,
+            "writeup_num": 0,
+            "challenge_num": 3,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 40,
+            "name": "我们的绿色秘密",
+            "deal_num": 2,
+            "explain": "这是一道图片隐写属于我们的秘密。flag形式为 flag{}",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-19 10:51:02",
+            "author_name": "管理员",
+            "fraction": 50,
+            "author": 1,
+            "level": 5,
+            "writeup_num": 0,
+            "challenge_num": 17,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 41,
+            "name": "TCP-urgent-pointer",
+            "deal_num": 36,
+            "explain": "这是一点流量分析题。所有的提示都在流量里，想要拿到flag的话就来分析一下它。flag形式为 flag{}",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-19 10:51:54",
+            "author_name": "管理员",
+            "fraction": 50,
+            "author": 1,
+            "level": 5,
+            "writeup_num": 3,
+            "challenge_num": 36,
+            "question_abilitys_info": [
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 42,
+            "name": "工业梯形图分析一",
+            "deal_num": 31,
+            "explain": "这是一个常见的工控梯形图。当PIW的值为4096时，DB2.DBD0的值为多少？，flag形式为 flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-19 10:52:59",
+            "author_name": "管理员",
+            "fraction": 50,
+            "author": 1,
+            "level": 5,
+            "writeup_num": 1,
+            "challenge_num": 41,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 43,
+            "name": "工业梯形图分析二",
+            "deal_num": 23,
+            "explain": "这是一个常见的工控梯形图程序，当DB8.DBX0.0为1时，DB20.DBW0的值是多少？以十六进制表示，flag形式为 flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-19 10:53:47",
+            "author_name": "管理员",
+            "fraction": 50,
+            "author": 1,
+            "level": 5,
+            "writeup_num": 1,
+            "challenge_num": 29,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 44,
+            "name": "虚拟PLC",
+            "deal_num": 26,
+            "explain": "虚拟PLC是基于组态软件的仿真系统实现的原理，在于PLC内部各种继电器的状态与组态软件数据库中数据的链接以及该数据与计算机界面上图形对象的链接。通过修复该文件，分析虚拟PLC工作原理并发现文件中隐藏的flag，flag形式为 flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-19 10:54:35",
+            "author_name": "管理员",
+            "fraction": 50,
+            "author": 1,
+            "level": 5,
+            "writeup_num": 1,
+            "challenge_num": 28,
+            "question_abilitys_info": [
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                },
+                {
+                    "id": 6,
+                    "name": "设备漏洞挖掘"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 45,
+            "name": "AB协议分析（进阶版）",
+            "deal_num": 2,
+            "explain": "请尝试分析出当前文件的flag。Flag格式为:flag{}",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-19 10:55:43",
+            "author_name": "管理员",
+            "fraction": 50,
+            "author": 1,
+            "level": 5,
+            "writeup_num": 0,
+            "challenge_num": 3,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 46,
+            "name": "OPC协议分析（进阶版）",
+            "deal_num": 2,
+            "explain": "在pcap数据包中截获了异常的数据请尝试找出数据包中的flag。Flag格式为:flag{}",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-19 10:57:57",
+            "author_name": "管理员",
+            "fraction": 50,
+            "author": 1,
+            "level": 5,
+            "writeup_num": 0,
+            "challenge_num": 5,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 47,
+            "name": "工业网络设备逆向",
+            "deal_num": 17,
+            "explain": "这是一个工业系统中使用的路由器，系统的tddp协议存在远程代码执行漏洞。 请找出并分析tddp协议的执行过程，并回答以下问题 1.远程执行命令的消息类型为？（格式为CMD_???_???） 2.在tddp协议中第几个字节 = 什么时，可以控制发出远程执行命令的消息（FLAG格式为16进制），flag形式为 flag{16进制}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-19 14:15:39",
+            "author_name": "管理员",
+            "fraction": 50,
+            "author": 1,
+            "level": 5,
+            "writeup_num": 0,
+            "challenge_num": 26,
+            "question_abilitys_info": [
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                },
+                {
+                    "id": 6,
+                    "name": "设备漏洞挖掘"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 48,
+            "name": "二次设备固件逆向",
+            "deal_num": 32,
+            "explain": "在对电力行业某二次设备进行渗透测试时，通过弱口令telnet服务获取了设备的权限，并提取出了设备固件文件，现在需要从固件中分析出其他默认硬编码密码或厂家后门口令，flag形式为 flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-19 14:18:31",
+            "author_name": "管理员",
+            "fraction": 40,
+            "author": 1,
+            "level": 4,
+            "writeup_num": 0,
+            "challenge_num": 38,
+            "question_abilitys_info": [
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                },
+                {
+                    "id": 6,
+                    "name": "设备漏洞挖掘"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 49,
+            "name": "组态工程逆向分析",
+            "deal_num": 2,
+            "explain": "很多工业组态软件并未进行安全测试，存在很多安全隐患。请分析组态工程的文件，发现该工程的异常，并获取FLAG，flag形式为 flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-19 14:22:42",
+            "author_name": "管理员",
+            "fraction": 40,
+            "author": 1,
+            "level": 4,
+            "writeup_num": 0,
+            "challenge_num": 7,
+            "question_abilitys_info": [
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                },
+                {
+                    "id": 6,
+                    "name": "设备漏洞挖掘"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 50,
+            "name": "工业数据库安全分析",
+            "deal_num": 1,
+            "explain": "InSQL是世界上第一种面向工厂的高性能的实时关系型数据库。请分析数据库源文件，获取数据库中的异常，并找到FLAG，flag形式为 flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-19 14:31:51",
+            "author_name": "管理员",
+            "fraction": 40,
+            "author": 1,
+            "level": 4,
+            "writeup_num": 0,
+            "challenge_num": 4,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                },
+                {
+                    "id": 6,
+                    "name": "设备漏洞挖掘"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 51,
+            "name": "破解加密数据",
+            "deal_num": 99,
+            "explain": "某工控厂商自行研发了一套加密系统，这样的话只要不是系统内部人员，即使数据被窃听没关系了。你截获了一段密文：109930883401687215730636522935643539707，请进行解密，flag形式为 flag{}",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-19 14:34:50",
+            "author_name": "管理员",
+            "fraction": 10,
+            "author": 1,
+            "level": 1,
+            "writeup_num": 2,
+            "challenge_num": 104,
+            "question_abilitys_info": [
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 52,
+            "name": "工控协议分析",
+            "deal_num": 0,
+            "explain": "某黑客对工控系统进行渗透，发现某系统通过modbus协议进行数据通信，同时截获以下数据包，flag形式为 flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-01-19 15:19:22",
+            "author_name": "管理员",
+            "fraction": 20,
+            "author": 1,
+            "level": 2,
+            "writeup_num": 0,
+            "challenge_num": 18,
+            "question_abilitys_info": [
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 78,
+            "name": "所见非真",
+            "deal_num": 43,
+            "explain": "一个刚入门的黑客在互联网进行大批量扫描后，发现某制造企业SCADA系统主机存在严重漏洞，\n并利用该漏洞远程操纵该主机修改SCADA管理员登录密码，导致该企业无法正常监控工程状态，\n黑客只留下了一张图片，你能帮助该企业在此图片中寻找管理员登录密码的线索吗？",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-03-20 21:21:20",
+            "author_name": "张再炀",
+            "fraction": 20,
+            "author": 84,
+            "level": 2,
+            "writeup_num": 2,
+            "challenge_num": 51,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 92,
+            "name": "设备固件逆向",
+            "deal_num": 37,
+            "explain": "企业进行安全常规检查，发现上位机的c盘目录下存在一个特殊文件，结合到上个月企业发生的数据泄露的事件，初步判断此文件与黑客存在关联，你能帮助企业对该文件进行分析吗？并找到FLAG,flag形式为 flag{}",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-05-06 09:33:48",
+            "author_name": "管理员",
+            "fraction": 40,
+            "author": 1,
+            "level": 4,
+            "writeup_num": 1,
+            "challenge_num": 44,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 93,
+            "name": "内存镜像分析",
+            "deal_num": 37,
+            "explain": "一黑客通过互联网扫描,发现某企业的互联网入口,经过一系列操作将工控机进行了锁定,你能通过分析内存镜像,破解黑客留下的登录密码吗，并找到FLAG,flag形式为 flag{}",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-05-06 09:47:22",
+            "author_name": "管理员",
+            "fraction": 40,
+            "author": 1,
+            "level": 4,
+            "writeup_num": 3,
+            "challenge_num": 40,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 94,
+            "name": "常见的编码转换",
+            "deal_num": 68,
+            "explain": "某企业的SCADA系统主机被黑客入侵，管理员小华发现黑客上传了一个压缩包，我们需要帮助小华分析压缩包内的蛛丝马迹，找到FLAG,flag形式为 flag{}",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-05-06 09:52:59",
+            "author_name": "管理员",
+            "fraction": 10,
+            "author": 1,
+            "level": 1,
+            "writeup_num": 6,
+            "challenge_num": 75,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 95,
+            "name": "ICMP协议分析",
+            "deal_num": 96,
+            "explain": "某厂区遭到黑客恶意扫描，此为安全设备截取的一部分流量包，请尝试分析该流量文件，帮助安全人员找到黑客的行为轨迹，并找到隐藏的FLAG，flag形式为 flag{}",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-05-06 14:08:17",
+            "author_name": "管理员",
+            "fraction": 10,
+            "author": 1,
+            "level": 1,
+            "writeup_num": 1,
+            "challenge_num": 102,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 96,
+            "name": "流量隐写",
+            "deal_num": 33,
+            "explain": "黑客对某企业生产环境的数据进行窃取，将窃取数据隐藏在合法流量中，你能通过技术手段帮助安全人员分析出黑客窃取的数据吗？flag形式为 flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-05-06 14:14:22",
+            "author_name": "管理员",
+            "fraction": 30,
+            "author": 1,
+            "level": 3,
+            "writeup_num": 2,
+            "challenge_num": 39,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 97,
+            "name": "隐藏的信息",
+            "deal_num": 30,
+            "explain": "工控安全分析人员在互联网上部署了工业探针，通过探针告警截获了一段流量数据。请分析出流量数据中的异常 点，并拿到FLAG，flag形式为 flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-05-06 14:22:15",
+            "author_name": "管理员",
+            "fraction": 40,
+            "author": 1,
+            "level": 4,
+            "writeup_num": 2,
+            "challenge_num": 30,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 98,
+            "name": "工业现场应急响应",
+            "deal_num": 32,
+            "explain": "某工厂遭受黑客攻击，导致数据库内容被恶意删除，请帮助运维人员找回其中的重要文件。flag形式为 flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-05-06 14:26:53",
+            "author_name": "管理员",
+            "fraction": 50,
+            "author": 1,
+            "level": 5,
+            "writeup_num": 2,
+            "challenge_num": 37,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 99,
+            "name": "Modbus协议流量分析",
+            "deal_num": 71,
+            "explain": "黑客通过外网入侵到工厂的控制网络，之后对工控网络中的操作员站系统进行了攻击，最终通过工控协议破坏了正常的业务。我们通过监控工具得到黑客攻击前后的网络流量数据包，我们需要分析流量中的蛛丝马迹，找到FLAG,flag形式为 flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-05-06 14:34:50",
+            "author_name": "管理员",
+            "fraction": 10,
+            "author": 1,
+            "level": 1,
+            "writeup_num": 2,
+            "challenge_num": 103,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 100,
+            "name": "恶意文件分析",
+            "deal_num": 27,
+            "explain": "工控安全人员小华在工业生产现场的数控机床上发现了一个插着的U 盘，从中我们发现了一个文件，不过这个文件好像有点异常，作为安全运营人员你能发现这个文件中是否蕴藏着的密码，并找到FLAG,flag形式为 flag{}。\n提示:flag取最后结果。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-05-06 14:38:36",
+            "author_name": "管理员",
+            "fraction": 30,
+            "author": 1,
+            "level": 3,
+            "writeup_num": 1,
+            "challenge_num": 36,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 101,
+            "name": "工控业务流量分析",
+            "deal_num": 50,
+            "explain": "某工场在厂区安全检测时，检测到一段异常流量数据包，分析数据包中的异常，找到FLAG,flag形式为 flag{}",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-05-06 14:42:09",
+            "author_name": "管理员",
+            "fraction": 20,
+            "author": 1,
+            "level": 2,
+            "writeup_num": 1,
+            "challenge_num": 52,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 102,
+            "name": "恶意文件溯源",
+            "deal_num": 44,
+            "explain": "某厂区运维人员对工控设备进行常规安全检查，发现部分机器中存在可疑文件，你能帮助运维人员发现其中隐藏的信息吗？找到FLAG,flag形式为 flag{}",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-05-06 14:44:53",
+            "author_name": "管理员",
+            "fraction": 20,
+            "author": 1,
+            "level": 2,
+            "writeup_num": 1,
+            "challenge_num": 47,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 126,
+            "name": "协议精准定位分析",
+            "deal_num": 33,
+            "explain": "企业自动化运维管理员最近发现某工控设备频繁出现可疑地流量，请您帮助他分析确认一下问题。Flag格式为：。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-08-14 17:59:16",
+            "author_name": "管理员",
+            "fraction": 10,
+            "author": 1,
+            "level": 1,
+            "writeup_num": 2,
+            "challenge_num": 36,
+            "question_abilitys_info": [
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 127,
+            "name": "奇怪的声音",
+            "deal_num": 22,
+            "explain": "某工控环境中泄露了某些奇怪的声音，你能获取到flag吗?Flag格式为：flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-08-14 18:01:12",
+            "author_name": "管理员",
+            "fraction": 10,
+            "author": 1,
+            "level": 1,
+            "writeup_num": 1,
+            "challenge_num": 29,
+            "question_abilitys_info": [
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 128,
+            "name": "工控协议数据分析",
+            "deal_num": 14,
+            "explain": "生产系统的运维人员在进行日常审计中发现设备存在大量的告警日志，自动化工程师在进行上载分析中也没有发现相关的问题所在，请您帮助进行分析相关设备的存在的问题，flag格式为：flag{hex数据}",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-08-14 18:02:07",
+            "author_name": "管理员",
+            "fraction": 10,
+            "author": 1,
+            "level": 1,
+            "writeup_num": 0,
+            "challenge_num": 31,
+            "question_abilitys_info": [
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 129,
+            "name": "司机的身份",
+            "deal_num": 19,
+            "explain": "小明是一个卡车公司的管理员，他需要知道其中一辆卡车司机的身份信息，你能帮他找出来吗？Flag格式为：flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-08-14 18:03:30",
+            "author_name": "管理员",
+            "fraction": 20,
+            "author": 1,
+            "level": 2,
+            "writeup_num": 0,
+            "challenge_num": 25,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 130,
+            "name": "泄露的信号",
+            "deal_num": 10,
+            "explain": "安全研究员研究工控设备发出的无线信号进行研究，发现了一些不一样的东西。Flag格式为：flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-08-14 18:04:23",
+            "author_name": "管理员",
+            "fraction": 20,
+            "author": 1,
+            "level": 2,
+            "writeup_num": 0,
+            "challenge_num": 13,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 131,
+            "name": "工控大楼的道闸怎么坏了",
+            "deal_num": 20,
+            "explain": "某工控大楼道闸数据分析，你能获取到flag吗？Flag格式为：flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-08-14 18:05:40",
+            "author_name": "管理员",
+            "fraction": 20,
+            "author": 1,
+            "level": 2,
+            "writeup_num": 0,
+            "challenge_num": 26,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 132,
+            "name": "COTP",
+            "deal_num": 0,
+            "explain": "某工程师在运维中发现了设备的某些异常，怀疑可能遭受到了黑客的攻击，请您通过数据包帮助运维人员确定出被遭到了攻击的数据包。Flag格式为：flag{hex的data数据包}",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-08-14 18:06:45",
+            "author_name": "管理员",
+            "fraction": 20,
+            "author": 1,
+            "level": 2,
+            "writeup_num": 0,
+            "challenge_num": 10,
+            "question_abilitys_info": [
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 133,
+            "name": "ddddynamic",
+            "deal_num": 6,
+            "explain": "某工控设备突然运行变慢，似乎是在计算着什么东西，请您帮助他进行分析。Flag格式为：flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-08-14 18:07:45",
+            "author_name": "管理员",
+            "fraction": 30,
+            "author": 1,
+            "level": 3,
+            "writeup_num": 1,
+            "challenge_num": 7,
+            "question_abilitys_info": [
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 134,
+            "name": "某嵌入式设备固件升级包",
+            "deal_num": 8,
+            "explain": "对于嵌入式设备，升级包中含有真正的固件，在漏洞挖掘之前有必要对固件进行一些处理，提高分析效率。对UpgradePackage.bin进行分析，列出固件符号表项数(4bytes)、bsolute__C14SequenceNumber函数所对应的文件偏(4bytes)。flag{符号表项数+函数文件偏移}，为十六进制8字节数据\n注：不足四字节高位补0 ，例：symbol_item_counts：0x112233 补齐4字节：0x00112233。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-08-14 18:10:38",
+            "author_name": "管理员",
+            "fraction": 30,
+            "author": 1,
+            "level": 3,
+            "writeup_num": 0,
+            "challenge_num": 9,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 6,
+                    "name": "设备漏洞挖掘"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 135,
+            "name": "工业物联网智能网关数据分析",
+            "deal_num": 15,
+            "explain": "某工控内网环境有台设备环境被破坏了,安全人员想通过当时抓的流量包进行溯源, 你能帮他发现什么东西么?Flag格式为：flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-08-14 18:11:44",
+            "author_name": "管理员",
+            "fraction": 30,
+            "author": 1,
+            "level": 3,
+            "writeup_num": 0,
+            "challenge_num": 17,
+            "question_abilitys_info": [
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 136,
+            "name": "被篡改的数据",
+            "deal_num": 21,
+            "explain": "某黑客拿到上位机的权限后对工控设备存储的数据进行了大量的修改，请分析其攻击数据，并找到其中的flag信息。Flag格式为：flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-08-14 18:12:29",
+            "author_name": "管理员",
+            "fraction": 30,
+            "author": 1,
+            "level": 3,
+            "writeup_num": 2,
+            "challenge_num": 24,
+            "question_abilitys_info": [
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 137,
+            "name": "IoT",
+            "deal_num": 4,
+            "explain": "一台奇怪的单片机上运行着奇怪的程序，请您帮助调试相关程序。Flag格式为：flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-08-14 18:13:44",
+            "author_name": "管理员",
+            "fraction": 30,
+            "author": 1,
+            "level": 3,
+            "writeup_num": 0,
+            "challenge_num": 6,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 6,
+                    "name": "设备漏洞挖掘"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 138,
+            "name": "异常的工程文件",
+            "deal_num": 15,
+            "explain": "现存在一份被黑客攻击修改了的工程文件，请应急工作人员找出黑客攻击的痕迹，flag格式为：flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-12-24 16:16:30",
+            "author_name": "管理员",
+            "fraction": 10,
+            "author": 1,
+            "level": 1,
+            "writeup_num": 1,
+            "challenge_num": 27,
+            "question_abilitys_info": [
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 139,
+            "name": "病毒文件恢复",
+            "deal_num": 33,
+            "explain": "某厂区内部出现勒索病毒，且重要工程文件被黑客锁住，请应急人员解锁被勒索病毒锁住的文件，flag格式为：flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-12-24 16:17:24",
+            "author_name": "管理员",
+            "fraction": 10,
+            "author": 1,
+            "level": 1,
+            "writeup_num": 1,
+            "challenge_num": 35,
+            "question_abilitys_info": [
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 140,
+            "name": "简单Modbus协议分析",
+            "deal_num": 57,
+            "explain": "由于操作员操作不当导致化工车间蒸馏塔控制器程序出错，请分析错误程序查找错误点并获得flag，flag格式为flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-12-24 16:18:13",
+            "author_name": "管理员",
+            "fraction": 10,
+            "author": 1,
+            "level": 1,
+            "writeup_num": 2,
+            "challenge_num": 61,
+            "question_abilitys_info": [
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 141,
+            "name": "工控现场的恶意扫描",
+            "deal_num": 38,
+            "explain": "某生产车间PLC设备遭到攻击者恶意扫描攻击，请根据网络流量包分析攻击行为找到flag，flag格式为flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-12-24 16:21:07",
+            "author_name": "管理员",
+            "fraction": 10,
+            "author": 1,
+            "level": 1,
+            "writeup_num": 1,
+            "challenge_num": 41,
+            "question_abilitys_info": [
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 142,
+            "name": "注册表分析",
+            "deal_num": 24,
+            "explain": "此为某黑客主机注册表文件，请分析出此黑客进行连接的WiFi信息，flag格式为flag{}，提交flag不包含空格。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-12-24 16:21:54",
+            "author_name": "管理员",
+            "fraction": 20,
+            "author": 1,
+            "level": 2,
+            "writeup_num": 2,
+            "challenge_num": 24,
+            "question_abilitys_info": [
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 143,
+            "name": "S7comm",
+            "deal_num": 18,
+            "explain": "工厂车间流水线某工业控制设备遭到不明人员攻击，根据对攻击行为的溯源分析发现攻击者对设备进行了程序上传操作，请根据网络数据流量协助运维人员查找证据找到flag，flag格式为flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-12-24 16:23:06",
+            "author_name": "管理员",
+            "fraction": 20,
+            "author": 1,
+            "level": 2,
+            "writeup_num": 2,
+            "challenge_num": 22,
+            "question_abilitys_info": [
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 144,
+            "name": "工控组态分析",
+            "deal_num": 21,
+            "explain": "一些组态软件中进行会配置连接很多PLC设备信息。我们在SCADA 工程中写入了flag字段，请获取该工程flag，flag形式为 flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-12-24 16:23:52",
+            "author_name": "管理员",
+            "fraction": 20,
+            "author": 1,
+            "level": 2,
+            "writeup_num": 1,
+            "challenge_num": 24,
+            "question_abilitys_info": [
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 145,
+            "name": "梯形图分析1",
+            "deal_num": 19,
+            "explain": "出入自动化的小刘被单位的工程师出题，假设FC1块的IN1接口DB1.DBW0数值为886，IN2接口为325，IN3接口为25后，FC块将获取到接口的数据并加以计算最终由OUT接口DB1.DBD6输出结果是什么?flag格式为flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-12-24 16:24:37",
+            "author_name": "管理员",
+            "fraction": 30,
+            "author": 1,
+            "level": 3,
+            "writeup_num": 1,
+            "challenge_num": 21,
+            "question_abilitys_info": [
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 146,
+            "name": "异常的流量分析",
+            "deal_num": 23,
+            "explain": "工业网络中存在的异常，尝试通过分析PACP流量包，分析出流量数据中的异常点，并拿到FLAG，flag格式为 flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-12-24 16:25:27",
+            "author_name": "管理员",
+            "fraction": 30,
+            "author": 1,
+            "level": 3,
+            "writeup_num": 1,
+            "challenge_num": 24,
+            "question_abilitys_info": [
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 147,
+            "name": "S7协议恶意攻击分析",
+            "deal_num": 26,
+            "explain": "某天在硫化车间脱硫工艺所使用的的西门子PLC突然发生停机事件，经工厂人员调查发现该时间段PLC存在多次异常行为，请协助调查人员找出PLC相关行为，flag为异常行为数据包的前四位加后四位，格式为flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-12-24 16:26:08",
+            "author_name": "管理员",
+            "fraction": 30,
+            "author": 1,
+            "level": 3,
+            "writeup_num": 1,
+            "challenge_num": 31,
+            "question_abilitys_info": [
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 148,
+            "name": "PLC程序错误分析",
+            "deal_num": 0,
+            "explain": "智能制造某机械臂发生运行异常，经排查机械臂控制设备遭到恶意篡改，而工厂未对控制程序进行备份，分析现有程序逻辑将被篡改程序恢复为正常运行程序，flag为缺少程序段的点位名称组合，flag格式为flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-12-24 16:26:49",
+            "author_name": "管理员",
+            "fraction": 30,
+            "author": 1,
+            "level": 3,
+            "writeup_num": 0,
+            "challenge_num": 1,
+            "question_abilitys_info": [
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 149,
+            "name": "上位机通讯异常分析",
+            "deal_num": 19,
+            "explain": "生产车间某流水线运行异常，而上位机SCADA系统未开启报警功能，导致无法查询控制设备异常情况，请根据组态软件与控制设备之间通讯流量查找问题，flag为异常数据包data内容，flag格式为flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-12-24 16:28:26",
+            "author_name": "管理员",
+            "fraction": 30,
+            "author": 1,
+            "level": 3,
+            "writeup_num": 1,
+            "challenge_num": 19,
+            "question_abilitys_info": [
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 150,
+            "name": "IC卡分析",
+            "deal_num": 0,
+            "explain": "某工厂员工的IC卡被黑客做了手脚请进行分析，请对比两个数据中金额的不同，找出数据加密的规律，破解黑客留下的信息，flag格式为flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-12-24 16:29:13",
+            "author_name": "管理员",
+            "fraction": 30,
+            "author": 1,
+            "level": 3,
+            "writeup_num": 0,
+            "challenge_num": 8,
+            "question_abilitys_info": [
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 151,
+            "name": "内存取证分析",
+            "deal_num": 6,
+            "explain": "某工厂遭到黑客攻击，但黑客留下了攻击痕迹，系统管理人员将内存保存了下来请应急人员分析注：提示请分析主机账号密码，flag格式化为flag{}。\n\n下载链接1：\nhttps://share.weiyun.com/I8Bjz2rW 密码：smgur3\n下载链接2：\nhttps://drive.google.com/file/d/1pqmKITKcaan7ypCZWWN4HtodsBvdVTu2/view?usp=sharing\n下载链接3：\nhttps://pan.baidu.com/s/1ZMXa7NlfzoxcvK3G0ZDbdw  密码: fgn9",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-12-24 16:29:59",
+            "author_name": "管理员",
+            "fraction": 40,
+            "author": 1,
+            "level": 4,
+            "writeup_num": 0,
+            "challenge_num": 8,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 152,
+            "name": "梯形图2",
+            "deal_num": 22,
+            "explain": "出入自动化的小刘被单位的工程师出题，假设FC1块的tag8接口的DB1.DBD4为997，tag7为254，tag6为32，FC1块最终输出tag5接口的DB1.DBD0结果为？Flag格式为flag{}",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-12-24 16:30:42",
+            "author_name": "管理员",
+            "fraction": 30,
+            "author": 1,
+            "level": 3,
+            "writeup_num": 1,
+            "challenge_num": 23,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 153,
+            "name": "ICS ARP",
+            "deal_num": 1,
+            "explain": "某次技术培训中，张老师发现机器被异常的ARP攻击了一次，请你帮助他进行分析找到问题所在，flag为相关异常数据包的包号。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-12-24 16:31:28",
+            "author_name": "管理员",
+            "fraction": 30,
+            "author": 1,
+            "level": 3,
+            "writeup_num": 0,
+            "challenge_num": 4,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 154,
+            "name": "简单的梯形图分析3",
+            "deal_num": 0,
+            "explain": "请帮助工程师进行允许计算出M0.1-M0.7与M1.2-M1.7的点值信息，flag格式为flag{M0.1-M0.7M1.2-M1.7}",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-12-24 16:32:10",
+            "author_name": "管理员",
+            "fraction": 40,
+            "author": 1,
+            "level": 4,
+            "writeup_num": 0,
+            "challenge_num": 9,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 155,
+            "name": "S7comm 攻击协议分析",
+            "deal_num": 22,
+            "explain": "某工厂生产内网遭到恶意攻击，经排查发现攻击者对设备进行了修改设备参数操作，请分析数据通讯流量找出修改的具体参数信息，flag为篡改行为数据包的前四位加后四位，flag格式为flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-12-24 16:32:50",
+            "author_name": "管理员",
+            "fraction": 50,
+            "author": 1,
+            "level": 5,
+            "writeup_num": 1,
+            "challenge_num": 28,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 156,
+            "name": "Reverse-S7",
+            "deal_num": 0,
+            "explain": "逆向某工控组态软件中的密钥交换动态链接库，计算流量包中最后一个包中被`00`填充的32字节部分（result的hex格式字符串长度为64）。流量包中主机ip为192.168.1.121，plc的ip为192.168.1.1，flag格式为`flag{result[0:32]}`。为保证结果唯一，固定组态软件随机生成的私钥为`2a2f59846189fe1ebd88691cbb144d4afaeb8f095f5b08f5`。flag格式化为flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-12-24 16:33:26",
+            "author_name": "管理员",
+            "fraction": 50,
+            "author": 1,
+            "level": 5,
+            "writeup_num": 0,
+            "challenge_num": 2,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 157,
+            "name": "findit",
+            "deal_num": 0,
+            "explain": "这是一个部分损坏的固件，其中http access的后门账户密码已经被污染。请找出后门账户的用户名及密码, 已知密码由可见的非空白字符组成，且任意两字符ascii码的差大于10。Flag格式为 md5(strcat(用户名，密码))",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2020-12-24 16:34:05",
+            "author_name": "管理员",
+            "fraction": 50,
+            "author": 1,
+            "level": 5,
+            "writeup_num": 0,
+            "challenge_num": 1,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 163,
+            "name": "Modbus采集分析",
+            "deal_num": 13,
+            "explain": "安全巡检工程师会对控制设备运行情况进行检测分析，某日突然在流量中发现攻击者截取了工程师站采集数据的命令，并将采集命令进行了恶意篡改，导致上层无法获取设备正确的运行信息，影响企业正常生产运行，请分析出被篡改的恶意采集数据报文，获取flag。flag格式为：flag{}",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2021-06-29 17:25:08",
+            "author_name": "管理员",
+            "fraction": 40,
+            "author": 1,
+            "level": 4,
+            "writeup_num": 1,
+            "challenge_num": 17,
+            "question_abilitys_info": [
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 164,
+            "name": "Fins协议通讯",
+            "deal_num": 18,
+            "explain": "工程师小夏在工控日志流量审计设备中发现某台PLC设备通讯异常，请您帮助小夏分析出相关异常的加密数据。flag格式为：flag{}",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2021-06-29 17:27:25",
+            "author_name": "管理员",
+            "fraction": 40,
+            "author": 1,
+            "level": 4,
+            "writeup_num": 2,
+            "challenge_num": 21,
+            "question_abilitys_info": [
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 165,
+            "name": "恶意文件分析2021",
+            "deal_num": 7,
+            "explain": "老付是一名运维工程师，在工作中遇到一个工控上位机中存在异常程序，你能帮助老付分析出异常文件么？flag格式为:flag{}",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2021-06-29 17:32:49",
+            "author_name": "管理员",
+            "fraction": 40,
+            "author": 1,
+            "level": 4,
+            "writeup_num": 1,
+            "challenge_num": 8,
+            "question_abilitys_info": [
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                },
+                {
+                    "id": 6,
+                    "name": "设备漏洞挖掘"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 166,
+            "name": "工控安全异常取证分析",
+            "deal_num": 7,
+            "explain": "网络安全人员小吕在工厂中发现某台工程师站主机可能感染了病毒，小吕将磁盘导出后请你能帮忙一起分析出异常。flag格式为：flag{}",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2021-06-29 17:36:27",
+            "author_name": "管理员",
+            "fraction": 30,
+            "author": 1,
+            "level": 3,
+            "writeup_num": 1,
+            "challenge_num": 7,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 167,
+            "name": "OPC协议分析2021",
+            "deal_num": 5,
+            "explain": "某地区自动化网络安全专工对某工控企业进行渗透测试时，企业人员截获相关通信的数据包，请尝试对截获数据包解析并找出加密的关键信息。flag提交格式为:flag{}",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2021-06-29 17:38:08",
+            "author_name": "管理员",
+            "fraction": 30,
+            "author": 1,
+            "level": 3,
+            "writeup_num": 1,
+            "challenge_num": 10,
+            "question_abilitys_info": [
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 168,
+            "name": "异常的梯形图分析",
+            "deal_num": 0,
+            "explain": "某工厂的一个压力采集仪表中显示的数值与实际不符，工程师推测是程序出现错误，根据分析梯形图发现可能是其中一个变量的数值丢失导致计算程序出错，已知IW2值为5769，IW4为8956，V5为5768.658691，请帮工程师求出数值Q的值。flag格式为：flag{}",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2021-06-29 17:40:50",
+            "author_name": "管理员",
+            "fraction": 30,
+            "author": 1,
+            "level": 3,
+            "writeup_num": 1,
+            "challenge_num": 6,
+            "question_abilitys_info": [
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 169,
+            "name": "隐藏的工程",
+            "deal_num": 17,
+            "explain": "老代凭借多年工业企业运维经验，发现ICS工程师的工作电脑中有一张可疑的工艺图。在对图片进行分析时,发现其中存在异常信息，您能从中找到flag吗？flag格式为:flag{}",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2021-06-29 17:42:18",
+            "author_name": "管理员",
+            "fraction": 20,
+            "author": 1,
+            "level": 2,
+            "writeup_num": 2,
+            "challenge_num": 17,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 170,
+            "name": "工控现场里异常的文件",
+            "deal_num": 14,
+            "explain": "小刘在一次对目标主机的渗透测试时发现了一个隐藏的exe格式文件，根据小刘多年的渗透经验，凭直觉断定此文件一定隐藏着一些不为人知的秘密，随后小刘迅速下载此文件，用各种工具和手段对其展开深度分析，你能帮他找出此exe中到底隐藏了些什么秘密吗？flag格式为:flag{}",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2021-06-29 17:44:25",
+            "author_name": "管理员",
+            "fraction": 20,
+            "author": 1,
+            "level": 2,
+            "writeup_num": 1,
+            "challenge_num": 15,
+            "question_abilitys_info": [
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                },
+                {
+                    "id": 6,
+                    "name": "设备漏洞挖掘"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 171,
+            "name": "损坏的风机",
+            "deal_num": 28,
+            "explain": "小明是一家新能源汽车制造厂的风机操作员，每天的工作是根据工厂的实时温度输入风机的转数，但由于机器的老化，风机最多能接受2000转/分钟的转速，在当天下班后，检修人员发现风机由于转速过快出现了故障，请根据维修人员捕获的流量包分析当天风机的转速达到了多少转才出现的故障，flag为发送高额转速的Data层的HEX数据。flag格式为:flag{}",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2021-06-29 17:45:25",
+            "author_name": "管理员",
+            "fraction": 10,
+            "author": 1,
+            "level": 1,
+            "writeup_num": 4,
+            "challenge_num": 30,
+            "question_abilitys_info": [
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 172,
+            "name": "简单的梯形图",
+            "deal_num": 27,
+            "explain": "自动化专家老刘给刚刚实习的小王出了一道梯形图计算题：在进行模拟量程序整定时发现程序中整定出的两个数值与实际的相差过大，已知IW2值为12658，V7为64904.41016，V8为1.414213538，需要小王计算出IW4的值。您能帮助小王计算出IW4的值么？flag格式为:flag{}",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2021-06-29 17:46:16",
+            "author_name": "管理员",
+            "fraction": 10,
+            "author": 1,
+            "level": 1,
+            "writeup_num": 3,
+            "challenge_num": 30,
+            "question_abilitys_info": [
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 173,
+            "name": "隐藏的工艺",
+            "deal_num": 19,
+            "explain": "工控安全工程师把工艺流程分享在论坛中，并留下关键敏感信息，你能找到相关线索吗？flag格式为:flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2021-07-02 10:38:07",
+            "author_name": "管理员",
+            "fraction": 10,
+            "author": 1,
+            "level": 1,
+            "writeup_num": 2,
+            "challenge_num": 20,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 174,
+            "name": "被加密的系统日志",
+            "deal_num": 14,
+            "explain": "某日公司车间部分上位机软件无法运行，网络安全工程师小吕在排查问题中怀疑机器感染了勒索病毒，小吕想通过恢复系统日志进一步确认病毒感染时间,你能帮助小吕将日志恢复出来吗？flag格式为:flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2021-07-02 10:40:03",
+            "author_name": "管理员",
+            "fraction": 10,
+            "author": 1,
+            "level": 1,
+            "writeup_num": 1,
+            "challenge_num": 16,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 175,
+            "name": "异常梯形图分析",
+            "deal_num": 14,
+            "explain": "某工厂的设备启动需要根据当前梯形图内数值计算后对结果进行检测，正确后才可启动，这天小李照常准备启动设备，却发现按下启动按钮后设备没有照常启动，请帮助小李检查程序内缺少的数值,已知D10为8748，帮助小李填补D30与D25的值，使Y0.1可以正常输出。flag格式为flag{D25_D25数值_D30_D30数值}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2021-07-02 10:41:19",
+            "author_name": "管理员",
+            "fraction": 20,
+            "author": 1,
+            "level": 2,
+            "writeup_num": 1,
+            "challenge_num": 16,
+            "question_abilitys_info": [
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 176,
+            "name": "异常的文件",
+            "deal_num": 9,
+            "explain": "某次工控安全测试中，老付发现靶标的主机上存留一个与相关系统无关的程序，你能破解出来分析到里面的关键信息吗？flag格式为:flag{}",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2021-07-02 10:42:48",
+            "author_name": "管理员",
+            "fraction": 20,
+            "author": 1,
+            "level": 2,
+            "writeup_num": 1,
+            "challenge_num": 12,
+            "question_abilitys_info": [
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                },
+                {
+                    "id": 6,
+                    "name": "设备漏洞挖掘"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 177,
+            "name": "控制器数据备份失败",
+            "deal_num": 11,
+            "explain": "企业工程师小杨定期对生产设备控制器工程进行上传备份，在本周的定期备份工作中发现备份报错，经设备厂商分析排查之后，发现工程师发送至控制器的命令数据被攻击者篡改，导致工程上传备份报错，请分析遭受篡改的数据信息得出flag，flag为:受篡改包号+受篡改字段值。flag格式为:flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2021-07-02 10:44:39",
+            "author_name": "管理员",
+            "fraction": 20,
+            "author": 1,
+            "level": 2,
+            "writeup_num": 1,
+            "challenge_num": 11,
+            "question_abilitys_info": [
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 178,
+            "name": "PLC故障分析",
+            "deal_num": 17,
+            "explain": "某天工业现场生产线设备出现故障报警，请通过事发时的数据包分析报警原因，找到flag。flag格式为:flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2021-07-02 10:45:52",
+            "author_name": "管理员",
+            "fraction": 30,
+            "author": 1,
+            "level": 3,
+            "writeup_num": 1,
+            "challenge_num": 18,
+            "question_abilitys_info": [
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 179,
+            "name": "工控梯形图分析",
+            "deal_num": 7,
+            "explain": "小曲所在的工厂里出现交通灯故障，由于小曲的经验不足只知道交通灯的大概规则是:当FC1块start引脚为1时，信号灯的启动控制过程，信号灯亮灭的情况状态代号如下C_green为车道绿灯，C_red为车道红灯，C_yellow为车道黄灯，R_green为人行道绿灯，R_red为人行道红灯flag信号灯启动亮灭合并为一串数字顺序为C_green、R_red、C_red、C_yellow、R_green。相关亮灯与灭灯的状态通过1、0进行展示，您能帮助小曲解决问题吗? flag格式为:flag{}。\n例如：C_green（亮灭）R_red（亮灭）C_red（亮灭）C_yellow（亮灭）R_green（亮灭），flag为{1010101010}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2021-07-02 10:47:02",
+            "author_name": "管理员",
+            "fraction": 30,
+            "author": 1,
+            "level": 3,
+            "writeup_num": 1,
+            "challenge_num": 8,
+            "question_abilitys_info": [
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 180,
+            "name": "嵌入在Android中的工控程序",
+            "deal_num": 5,
+            "explain": "工控安全的工作中常常需要逆向与工控技术能力积累，你能尝试解出赛题的答案吗？flag格式为:flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2021-07-02 10:48:25",
+            "author_name": "管理员",
+            "fraction": 40,
+            "author": 1,
+            "level": 4,
+            "writeup_num": 1,
+            "challenge_num": 6,
+            "question_abilitys_info": [
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                },
+                {
+                    "id": 6,
+                    "name": "设备漏洞挖掘"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 181,
+            "name": "异常的Fins协议分析",
+            "deal_num": 16,
+            "explain": "某工控IDS在进行协议解析中发现协议解析异常，但是工程师小刘在查看数据包中并未发现异常，请您帮助小刘分析出异常协议流量包的包号是多少。flag格式为:flag{异常协议流量包的包号}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2021-07-02 10:49:44",
+            "author_name": "管理员",
+            "fraction": 40,
+            "author": 1,
+            "level": 4,
+            "writeup_num": 1,
+            "challenge_num": 17,
+            "question_abilitys_info": [
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 182,
+            "name": "有趣的流水线",
+            "deal_num": 0,
+            "explain": "某生产线老师傅在对小刘讲解流水线作业流程中，对小刘进行询问：当灌装贴签流水线启动手动模式时，分别按下启动按钮可以启动不同的电机；因M4电机为多段速电机，当M4电机按了3次时，当前流水线运行速度发生改变。请您帮助小刘进行计算当前流水线的运行实例（详细赛题实例请下载进行查看）。flag格式为:flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2021-07-02 10:50:43",
+            "author_name": "管理员",
+            "fraction": 50,
+            "author": 1,
+            "level": 5,
+            "writeup_num": 1,
+            "challenge_num": 2,
+            "question_abilitys_info": [
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 183,
+            "name": "异常的IEC104分析",
+            "deal_num": 37,
+            "explain": "小张在对电力企业进行渗透测试时，发现一台开启IEC104通讯协议的设备，并尝试对该设备进行测试。但是在IDS中发现了相关通讯异常。请尝试找出数据包中的flag。flag格式为:flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2021-07-05 17:24:10",
+            "author_name": "管理员",
+            "fraction": 10,
+            "author": 1,
+            "level": 1,
+            "writeup_num": 1,
+            "challenge_num": 39,
+            "question_abilitys_info": [
+                {
+                    "id": 1,
+                    "name": "溯源及归因"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 184,
+            "name": "异常的s7comm",
+            "deal_num": 27,
+            "explain": "工程师小夏在针对西门子300PLC设备不定期的停止运行，发现设备存在异常外联控制，再对审计设备进行分析中发现数据包中存在异常的eth.trailer、eth.fcs,请您帮助小夏找到外联地址并发送异常的HEX，对服务器返回的HEX进行解密。flag格式为:flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2021-07-05 17:24:56",
+            "author_name": "管理员",
+            "fraction": 10,
+            "author": 1,
+            "level": 1,
+            "writeup_num": 2,
+            "challenge_num": 28,
+            "question_abilitys_info": [
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 185,
+            "name": "工控梯形图分析1",
+            "deal_num": 29,
+            "explain": "小张在进行设备调试时，编写了一段模拟量转换的程序，已知IW2的值为7750，V14为0.2396091521，请计算出V11的值帮助小张进一步分析，flag为V11与V13之和。flag格式为flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2021-07-05 17:26:03",
+            "author_name": "管理员",
+            "fraction": 20,
+            "author": 1,
+            "level": 2,
+            "writeup_num": 1,
+            "challenge_num": 31,
+            "question_abilitys_info": [
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 186,
+            "name": "异常的协议分析",
+            "deal_num": 25,
+            "explain": "小代所在的企业车间PLC发生异常，造成生产线无法正常运行。请您帮助小代分析出PLC遭到异常的原因。flag格式为:flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2021-07-05 17:27:07",
+            "author_name": "管理员",
+            "fraction": 20,
+            "author": 1,
+            "level": 2,
+            "writeup_num": 1,
+            "challenge_num": 27,
+            "question_abilitys_info": [
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 187,
+            "name": "工控指示灯的逻辑推理",
+            "deal_num": 0,
+            "explain": "小明刚刚入门工业自动化领域，某天发现一个很有意思的指示灯梯形图运行过程，你能帮助小明找出flag吗？（详细赛题实例请下载进行查看）,flag格式为flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2021-07-05 17:28:37",
+            "author_name": "管理员",
+            "fraction": 30,
+            "author": 1,
+            "level": 3,
+            "writeup_num": 1,
+            "challenge_num": 10,
+            "question_abilitys_info": [
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 188,
+            "name": "设备连接失败异常分析",
+            "deal_num": 9,
+            "explain": "小李所在的公司炼化车间遭受网络攻击，导致流水线控制器运行异常，经小李分析发现控制器与上位机无法链接，导致无法查看控制器内部的日志信息，请您帮助小李分析无法链接原因。flag格式为flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2021-07-05 17:30:12",
+            "author_name": "管理员",
+            "fraction": 30,
+            "author": 1,
+            "level": 3,
+            "writeup_num": 1,
+            "challenge_num": 13,
+            "question_abilitys_info": [
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 3,
+                    "name": "工业网络运维"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 189,
+            "name": "工控梯形图分析2",
+            "deal_num": 27,
+            "explain": "小王是工厂的一名工程师，每天的工作是启动设备进行加工，设备一共进行两次加工。设备在运转过程中突然停止工作，打开梯形图发现其中两个数值丢失，请帮助小王填补数值VD200与VD300，flag为VD200加上VD300。flag格式为flag{VD200_XX_VD300_XX}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2021-07-05 17:31:23",
+            "author_name": "管理员",
+            "fraction": 30,
+            "author": 1,
+            "level": 3,
+            "writeup_num": 3,
+            "challenge_num": 28,
+            "question_abilitys_info": [
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 190,
+            "name": "智能卡",
+            "deal_num": 27,
+            "explain": "小吕对一张已经过期的Mifare非接触智能卡进行修改，想进行延长智能卡的到期时间。小吕成功对数据解密并将数据dump出来，存为originalData。再将相关文件中的有关时间的数据进行修改并重新写入智能卡中。修改后本卡还是不能使用。小吕再次将卡内数据导出，存为modifyData。你能帮助小吕解决相关智能卡的使用吗？flag是文件的md5值。flag格式为:flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2021-07-05 17:32:26",
+            "author_name": "管理员",
+            "fraction": 40,
+            "author": 1,
+            "level": 4,
+            "writeup_num": 1,
+            "challenge_num": 27,
+            "question_abilitys_info": [
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                },
+                {
+                    "id": 5,
+                    "name": "工业网络渗透"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 191,
+            "name": "工控逆向分析",
+            "deal_num": 12,
+            "explain": "小刘在学习工控逆向分析的过程中遇到了一个难以调试GUI程序，你能帮助他调试吗？flag格式为:flag{}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2021-07-05 17:34:05",
+            "author_name": "管理员",
+            "fraction": 40,
+            "author": 1,
+            "level": 4,
+            "writeup_num": 1,
+            "challenge_num": 15,
+            "question_abilitys_info": [
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                }
+            ],
+            "challenge_status": null
+        },
+        {
+            "id": 192,
+            "name": "有趣的流水线2",
+            "deal_num": 0,
+            "explain": "小刘经过努力终于完成了罐装贴标签流水线运行。老师傅又给小刘一套自动模式程序，让小刘描述出其中的运行过程。你能帮助小刘吗？（详细赛题实例请下载进行查看）。flag为接触的字符前20位和后21位不包含\"-\"。flag格式为:flag{XX-XX-XX}。",
+            "question_tags": 1,
+            "get_question_tags_display": "离线赛题",
+            "created_local_time": "2021-07-05 17:35:46",
+            "author_name": "管理员",
+            "fraction": 50,
+            "author": 1,
+            "level": 5,
+            "writeup_num": 1,
+            "challenge_num": 1,
+            "question_abilitys_info": [
+                {
+                    "id": 2,
+                    "name": "工业自动化基础"
+                },
+                {
+                    "id": 4,
+                    "name": "工业应用安全"
+                }
+            ],
+            "challenge_status": null
+        }
+    ],
+    "page_info": {}
+}
