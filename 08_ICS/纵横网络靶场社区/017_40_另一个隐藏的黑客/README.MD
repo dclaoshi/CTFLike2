@@ -27,10 +27,18 @@
 ## 解题思路
 ---
 
+使用`Audacity`导入文件，调整到频谱图看到flag
+
+![](images/ctf-2021-09-24-16-28-28.png)
+
+![](images/ctf-2021-09-24-16-29-22.png)
+
+我也不知道别人是怎么看出来的
 
 ## Flag
 ---
 
+flag{too simple too young}
 
 ## 参考
 ---

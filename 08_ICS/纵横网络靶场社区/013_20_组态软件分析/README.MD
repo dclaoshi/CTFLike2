@@ -27,10 +27,18 @@
 ## 解题思路
 ---
 
+附件打开后是`PCZ`文件，使用力控恢复工程，将工程使用grep搜索flag
+
+```bash
+grep -ar "flag" ./test1
+```
+
+![](images/ctf-2021-09-01-23-37-24.png)
+
 
 ## Flag
 ---
-
+flag{D076-4D7E-92AC-A05ACB788292}
 
 ## 参考
 ---

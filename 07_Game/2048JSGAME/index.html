@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title></title>
+ <meta charset="utf-8" />
+ <link rel="stylesheet" href="2048.css"/>
+ <script src="2048.js"></script>
+ <script>
+ </script>
+ </head>
+ <body>
+ <p>Score:<span id="score"></span></p>
+ <div id="gridPanel">
+ <!--背景格-->
+ <!--第1行-->
+ <div id="g00" class="grid"></div>
+ <div id="g01" class="grid"></div>
+ <div id="g02" class="grid"></div>
+ <div id="g03" class="grid"></div>
+ <!--第2行-->
+ <div id="g10" class="grid"></div>
+ <div id="g11" class="grid"></div>
+ <div id="g12" class="grid"></div>
+ <div id="g13" class="grid"></div>
+ <!--第3行-->
+ <div id="g20" class="grid"></div>
+ <div id="g21" class="grid"></div>
+ <div id="g22" class="grid"></div>
+ <div id="g23" class="grid"></div>
+ <!--第4行-->
+ <div id="g30" class="grid"></div>
+ <div id="g31" class="grid"></div>
+ <div id="g32" class="grid"></div>
+ <div id="g33" class="grid"></div>
+ <!--前景格-->
+ <!--第1行-->
+ <div id="c00" class="cell"></div>
+ <div id="c01" class="cell"></div>
+ <div id="c02" class="cell"></div>
+ <div id="c03" class="cell"></div>
+ <!--第2行-->
+ <div id="c10" class="cell"></div>
+ <div id="c11" class="cell"></div>
+ <div id="c12" class="cell"></div>
+ <div id="c13" class="cell"></div>
+ <!--第3行-->
+ <div id="c20" class="cell"></div>
+ <div id="c21" class="cell"></div>
+ <div id="c22" class="cell"></div>
+ <div id="c23" class="cell"></div>
+ <!--第4行-->
+ <div id="c30" class="cell"></div>
+ <div id="c31" class="cell"></div>
+ <div id="c32" class="cell"></div>
+ <div id="c33" class="cell"></div>
+ </div>
+ <div id="gameOver"><!--同时包含前景和背景的容器-->
+ <div><!--半透明灰色背景--></div>
+ <p><!--居中小窗口-->
+  Game Over!<br>
+  Score:<span id="finalScore"></span><br>
+  <a class="button" onclick="game.start()">Try again!</a>
+ </p>
+ </div>
+ </body>
+</html>
